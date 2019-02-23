@@ -2,8 +2,8 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-**PHASE 1 DEADLINE: FRI 2018-03-01 (Mar 1) @ 11:55 PM EST**.
-**PHASE 2 DEADLINE: FRI 2018-03-08 (Mar 8) @ 11:55 PM EST**.
+* **PHASE 1 DEADLINE: FRI 2018-03-01 (Mar 1) @ 11:55 PM EST**.
+* **PHASE 2 DEADLINE: FRI 2018-03-08 (Mar 8) @ 11:55 PM EST**.
 
 This document contains the description for the API Fun project
 assigned to the students in the Spring 2019 CSCI 1302 classes
