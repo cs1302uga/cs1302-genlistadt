@@ -44,23 +44,17 @@ command while inside of your project directory.
 
 ## Project Description
 
-In this project, you are tasked with contract work for a client. Your manager has
-already conducted initial negotiations with the client, and a brief summary of the
-work expected for this multi-phase project is outlined below. You will be doing
-the following:
-* implementing a generic list interface `List<T>` that provides stream-like 
-  functionality;
-* interacting with the [Flickr API](https://www.flickr.com/services/api/) using the 
-  [Google Gson Library](https://github.com/google/gson) 
-  and a provided `FlickerPhotoFeed` class;
-* writing and documenting a class to represent Flickr photo metadata retrieved
-  from the API; and
-* creating a Java program to generate HTML pages based on Flickr API queries for
-  image tags.
+In this project, you are tasked with implementing a generic list interface `List<T>`
+that provides stream-like functionality. Your implementation must use a linked list
+as the internal storage for the list. Each node of the linked list should contain a 
+generic type object along with a pointer to another node. The provided jar file does 
+not contain the generic node class. However, you are welcome to use any code you 
+created in a class exercise as long as you can explain any part of the code, if asked 
+to do so.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/">here</a>.
+for the interface <a href="">TODO FILL ME IN</a>.
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method.
@@ -68,24 +62,27 @@ changes the behavior of the method.
 Implementors are always free to implement additional methods in addition
 to the ones defined by the interface. However, they should not assume that
 users (e.g., graders) will use them (even if declared with `public` visibility), 
-since they are not defined in the interface. These additional methods may help
-avoid redundancy and promote code reuse within an implementation.
+since they are not defined in the interface. In other words, a driver class should
+not be required to call any methods that aren't given in the interface in order to 
+fully test the implementation of the interface. Any additional methods you write may 
+help avoid redundancy and promote code reuse.
 
 ### Suggested Reading
 
-* LDC Ch. 9 (Polymorhism)
-* [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/)
+* LDC Ch. 9 (Polymorphism)
+* [API Documentation for `GenList`(TODO: FILL ME IN)
 
 ### Learning Outcomes
 
 * Implement classes according to an interface (1302-LO1).
 * Utilitze polymorphism in a software project (1302-LO3-LO4).
+* Use common data structures including lists (1302-L05).
 * Test your implementation using unit tests (1302-LO9).
 
 ## Project Requirements & Grading
 
 This assignment is worth 100 points. The lowest possible grade is 0, and the 
-highest possible grade is 110 (due to extra credit).
+highest possible grade is unclear (TODO: FIGURE OUT IF EXTRA CREDIT).
 
 ### Functional Requirements
 
@@ -94,24 +91,24 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
-* **`LinkedList`:** Create the `cs1302.apifun.LinkedList<T>` class such
+* **`LinkedList`:** Create the `cs1302.genlistadt.LinkedList<T>` class such
   that it properly implements the `cs1302.util.List<T>` interface 
   with additional requirements listed below. 
 
-  * You must explicitly define and document  default constructor for this class. 
+  * You must explicitly define and document a default constructor for this class. 
 	The initial size of a `LinkedStringList<T>` is `0` regardless of the list's
 	underlying storage--remember, the list's internal storage and the list 
 	itself are two different things. Here is the signature:
 	
 	```java
-	public LinkedStringList();
+	public LinkedList();
 	```
 
   * You must explicitly define and document a copy constructor for this class.
 	It should make the new list a deep copy of the other list. Therefore, the initial 
-	size and element values of the new list should be the other list. The other
-	list can be any implementation of the `StringList` interface. Here is
-	the signature:
+	size and element values of the new list should be the same as the other list. The 
+	other list can be any implementation of the `List<U>` where `U` is required to be
+	either the same type as `T` or a subclass of `T`. Here is the signature:
 	
 	```java
 	public <U extends T> LinkedList(List<U> other);
@@ -119,6 +116,23 @@ The actual functionality is tested using test cases.
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
+    
+* **`LinkedListTest`:** Create the `cs1302.genlistadt.LinkedListTest` class to thoroughly
+  test your `LinkedList` implementation. In this class, you are required to:
+  
+  * Write at least 3 JUnit tests for each method that do not propogate exceptions. In other 
+    words, these unit tests should test the functionality assuming that method arguments are 
+    valid and that the calling object is non-null. For many of your methods, you will need to
+    provide more than 3 tests to fully test your implementation.
+    
+  * Write at least 1 JUnit test each exceptional situation for each method. If a method throws
+    two different types of exceptions, you should test each scenario with a separate JUnit test.
+    If a method throws one type of exception for two different reasons, you should test these 
+    with separate JUnit tests. If a method does not throw any exceptions, you can skip this step
+    for that method.
+  
+  * Use lambda expressions to implement any functional interfaces required as method
+    parameters. You cannot create separate `.java` files to implement these interfaces.
 
 * **(100 points) Test Cases**: The bulk of this project will be graded
   based on 50 JUnit test cases, each worth 2 points. This is the same as
@@ -265,7 +279,7 @@ made to modify your submission to evaluate other requirements.
 
 * **Project Directory Structure:** The location of the default
   package for the source code should be a direct subdirectory of 
-  `cs1302-listadt` called `src`. When the project is compiled, 
+  `cs1302-genlistadt` called `src`. When the project is compiled, 
   the `-d` option should be used with `javac` to make the default package 
   for compiled code a direct subdirectory of `cs1302-listadt` 
   called `bin`. 
@@ -301,28 +315,14 @@ made to modify your submission to evaluate other requirements.
   compilation dependencies. You should remove any `.java` files that you
   do not need before submission. 
   
-* **`cs1302.list.ArrayStringList` Storage Requirement:**
-  You must use a basic Java array for this class's storage. The initial
-  size of the array does not have to be the same size as the initial size
-  of the list. Whenever the size of the list is about to exceed the size
-  of its array, the list should dynamically allocate a new array of a larger
-  size and copy the contents over--please consider writing and documenting
-  a private support method to do this. If you use Java's `java.util.ArrayList` 
-  class or something similar, then that will result in an immediate violation
-  of this non-functional requirement, regardless of any use of a regular
-  array elsewhere in the class. This requirement also prohibits any use of 
-  third-party implementations of list or list-like interfaces.
-
-* **`cs1302.list.LinkedStringList` Storage Requirement:**
-  You must use a sequence of `cs1302.listadt.StringList.Node` objects
-  for this class's storage. Unlike the array-based implementation in
-  `ArrayStringList`, this type of storage is not limited to the number
-  of elements that can fit into an array (because there is not an array).
-  Instead, it's limited only by the available memory for the Java program
-  using the `LinkedStringList` object. You may find sections 13.1 and
+* **`cs1302.list.LinkedList` Storage Requirement:**
+  You must use a sequence of node (or container) objects
+  for this class's storage. This type of storage is limited only by the 
+  available memory for the Java program
+  using the `LinkedList` object. You may find sections 13.1 and
   13.2 of the LDC textbook useful reference material for this class.
   If you use Java's `java.util.LinkedList` class or something similar, then that 
-  will result in an immediate violation of this non-functional requirement, 
+  will result in an immediate violation of this absolute requirement, 
   regardless of any use of any `Node` objects elsewhere in the class.
   This requirement also prohibits any use of third-party implementations 
   of list or list-like interfaces.
@@ -333,8 +333,8 @@ made to modify your submission to evaluate other requirements.
 ### Grading
 
 This project will be graded using unit tests, none of which will be made 
-available before the project deadline. You can test your implementations yourself
-via interface polymorphism.
+available before the project deadline. Graders will also inspect your implementation
+of `LinkedListTest` to ensure proper use of JUnit tests and lambda expressions.
 
 ## How to Download the Project
 
@@ -409,15 +409,6 @@ Below are some frequently asked questions related to this project.
    } // get
    ```
    
-1. **How can I remove redundancy between my two implementations of the interface?**
-
-   You may find yourself implementing a method the eact same way in both classes. This is an
-   excellent opportunity to promote code reuse via inheritance! While not a requirement,
-   proper use of a single parent class containing methods and variables common to both
-   implementations can _vastly_ reduce the amount of code that you need to write for this
-   project. It is a beautiful compromise that illustrates the trade-off between more planning
-   versus more code writing and debugging.
-
 1. **What is `listadt.jar`?**
 
    In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single 
