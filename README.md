@@ -120,19 +120,20 @@ The actual functionality is tested using test cases.
 * **`LinkedListTest`:** Create the `cs1302.genlistadt.LinkedListTest` class to thoroughly
   test your `LinkedList` implementation. In this class, you are required to:
   
-  * Write at least 3 JUnit tests for each method that do not propogate exceptions. In other 
-    words, these unit tests should test the functionality assuming that method arguments are 
-    valid and that the calling object is non-null. For many of your methods, you will need to
-    provide more than 3 tests to fully test your implementation.
+  * Create a LinkedList<Integer> and a LinkedList<String> object.  For each:
+      * Write at least 3 JUnit tests for each method that do not propogate exceptions. In other 
+        words, these unit tests should test the functionality assuming that method arguments are 
+        valid and that the calling object is non-null. For many of your methods, you will need to
+        provide more than 3 tests to fully test your implementation.
     
-  * Write at least 1 JUnit test each exceptional situation for each method. If a method throws
-    two different types of exceptions, you should test each scenario with a separate JUnit test.
-    If a method throws one type of exception for two different reasons, you should test these 
-    with separate JUnit tests. If a method does not throw any exceptions, you can skip this step
-    for that method.
+      * Write at least 1 JUnit test each exceptional situation for each method. If a method throws
+        two different types of exceptions, you should test each scenario with a separate JUnit test.
+        If a method throws one type of exception for two different reasons, you should test these 
+        with separate JUnit tests. If a method does not throw any exceptions, you can skip this step
+        for that method.
   
-  * Use lambda expressions to implement any functional interfaces required as method
-    parameters. You cannot create separate `.java` files to implement these interfaces.
+     * Use lambda expressions to implement any functional interfaces required as method
+       parameters. You cannot create separate `.java` files to implement these interfaces.
 
 * **(100 points) Test Cases**: The bulk of this project will be graded
   based on 50 JUnit test cases, each worth 2 points. This is the same as
