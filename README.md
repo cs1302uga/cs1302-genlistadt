@@ -13,9 +13,9 @@ final submission via the `submit` command before the date/times listed below
 automatically receive the associated extra credit. The late penalty does not
 start applying until the after the final date listed. 
 
-* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (+20 Extra Credit)**
-* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (+10 Extra Credit)**
-* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (+0 Extra Credit)**
+* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (`+20` Extra Credit)**
+* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (`+10` Extra Credit)**
+* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (`+00` Extra Credit)**
 
 ## Table of Contents
 
