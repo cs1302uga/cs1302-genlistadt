@@ -2,15 +2,20 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-* **DUE: FRI 2018-03-08 (Mar 8) @ 11:55 PM EST**.
-
 This document contains the description for the Generic List API 
 project assigned to the students in the Spring 2019 CSCI 1302 classes
 at the University of Georgia.
 
-**Read the entirety of this file before beginning your project.**
+## Deadline Options
 
-**Seriously. Read this entire file *before* starting.**
+There are different deadline options for this project. Students who perform their
+final submission via the `submit` command before the date/times listed below
+automatically receive the associated extra credit. The late penalty does not
+start applying until the after the final date listed. 
+
+* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (+20 Extra Credit)**
+* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (+10 Extra Credit)**
+* **FRI 2019-03-08 (Mar 8) @ 11:55 PM EST (+0 Extra Credit)**
 
 ## Table of Contents
 
@@ -54,7 +59,7 @@ to do so.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface <a href="">TODO FILL ME IN</a>.
+for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html">here</a>.
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method.
@@ -70,7 +75,7 @@ help avoid redundancy and promote code reuse.
 ### Suggested Reading
 
 * LDC Ch. 9 (Polymorphism)
-* [API Documentation for `GenList`(TODO: FILL ME IN)
+* [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
 
 ### Learning Outcomes
 
@@ -82,7 +87,8 @@ help avoid redundancy and promote code reuse.
 ## Project Requirements & Grading
 
 This assignment is worth 100 points. The lowest possible grade is 0, and the 
-highest possible grade is unclear (TODO: FIGURE OUT IF EXTRA CREDIT).
+highest possible grade is 120 based on the date of your last submission
+(see extra credit).
 
 ### Functional Requirements
 
