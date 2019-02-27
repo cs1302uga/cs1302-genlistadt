@@ -116,6 +116,8 @@ The actual functionality is tested using test cases.
 
   * You must explicitly define and document all constructors required by
     the interface API documentation.
+    
+  * The `iterator` method is requried for this project.
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
