@@ -58,8 +58,8 @@ manager assigned this new, updated task to you.
 In this project, you are tasked with implementing a generic list interface `GenList<T>`
 that provides stream-like functionality. Your implementation must use a linked list
 as the internal storage for the list. Each node of the linked list should contain a 
-generic type object along with a pointer to another node. The provided jar file does 
-not contain the generic node class. However, you are welcome to use any code you 
+generic type object along with a pointer to another node of the same type. The provided 
+JAR file does not contain the generic node class. However, you are welcome to use any code you 
 created in a class exercise as long as you can explain any part of the code, if asked 
 to do so.
 
@@ -128,7 +128,7 @@ The actual functionality is tested using test cases.
     the project has been released. This tester will contain a special, interactive
     driver-type class that you can use to partially test your `LinkedGenList<T>`
     class. This tester is not what will be used during grading, however, you
-    may find it useful when writing your own tests.
+    may find it useful when _initially_ testing your methods.
     
 * **(13 points) `LinkedGenListTest`:** Create the `cs1302.genlist.LinkedGenListTest` class
   to demo proper use of some of the more interesting methods provided by the
