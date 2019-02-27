@@ -49,7 +49,7 @@ command while inside of your project directory.
 
 ## Project Description
 
-In this project, you are tasked with implementing a generic list interface `List<T>`
+In this project, you are tasked with implementing a generic list interface `GenList<T>`
 that provides stream-like functionality. Your implementation must use a linked list
 as the internal storage for the list. Each node of the linked list should contain a 
 generic type object along with a pointer to another node. The provided jar file does 
@@ -59,10 +59,16 @@ to do so.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html">here</a>.
+for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html">here</a>
+as well as a `.jar` file containing the compiled version of the interface..
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method.
+
+Pay close attention to API documentation for each and every method. While some methods
+are new for this project, there are methods that existed in the previous project now
+with updated API documentation. For example, the `add` method that takes another list
+as a parameter is now required to handle self reference.
 
 Implementors are always free to implement additional methods in addition
 to the ones defined by the interface. However, they should not assume that
@@ -74,7 +80,6 @@ help avoid redundancy and promote code reuse.
 
 ### Suggested Reading
 
-* LDC Ch. 9 (Polymorphism)
 * [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
 
 ### Learning Outcomes
@@ -88,7 +93,7 @@ help avoid redundancy and promote code reuse.
 
 This assignment is worth 100 points. The lowest possible grade is 0, and the 
 highest possible grade is 120 based on the date of your last submission
-(see extra credit).
+(see [Deadline Options](#deadline-options)).
 
 ### Functional Requirements
 
@@ -97,55 +102,43 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
-* **`LinkedList`:** Create the `cs1302.genlistadt.LinkedList<T>` class such
-  that it properly implements the `cs1302.util.List<T>` interface 
+* **(87 points) `LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` class such
+  that it properly implements the `cs1302.util.GenList<T>` interface 
   with additional requirements listed below. 
 
-  * You must explicitly define and document a default constructor for this class. 
-	The initial size of a `LinkedStringList<T>` is `0` regardless of the list's
-	underlying storage--remember, the list's internal storage and the list 
-	itself are two different things. Here is the signature:
-	
-	```java
-	public LinkedList();
-	```
-
-  * You must explicitly define and document a copy constructor for this class.
-	It should make the new list a deep copy of the other list. Therefore, the initial 
-	size and element values of the new list should be the same as the other list. The 
-	other list can be any implementation of the `List<U>` where `U` is required to be
-	either the same type as `T` or a subclass of `T`. Here is the signature:
-	
-	```java
-	public <U extends T> LinkedList(List<U> other);
-	```
+  * You must explicitly define and document all constructors required by
+    the interface API documentation.
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
+	
+  * The bulk of this functional requirement will be graded
+    based on 87 JUnit test cases, each worth 1 point. This is the same as
+    someone using the classes you wrote based purely on the interface
+    definitions. If you implement the interface correctly, then you should
+    pass the associated test cases. 
     
-* **`LinkedListTest`:** Create the `cs1302.genlistadt.LinkedListTest` class to thoroughly
-  test your `LinkedList` implementation. In this class, you are required to:
+* **(13 points) `LinkedListTest`:** Create the `cs1302.genlist.LinkedListTest` class
+  to demo proper use of some of the more interesting methods provided by the
+  interface using your `LinkedGenList<T>` class. In this class, you are required to
+  create a static method that demos a `GenList<T>` method on two different
+  reference types in a meaningful way **using multiple lambda expressions**. 
+  You need one of these static demo methods for each each of the following 
+  interface methods:
   
-  * Create a LinkedList<Integer> and a LinkedList<String> object.  For each:
-      * Write at least 3 JUnit tests for each method that do not propogate exceptions. In other 
-        words, these unit tests should test the functionality assuming that method arguments are 
-        valid and that the calling object is non-null. For many of your methods, you will need to
-        provide more than 3 tests to fully test your implementation.
-    
-      * Write at least 1 JUnit test each exceptional situation for each method. If a method throws
-        two different types of exceptions, you should test each scenario with a separate JUnit test.
-        If a method throws one type of exception for two different reasons, you should test these 
-        with separate JUnit tests. If a method does not throw any exceptions, you can skip this step
-        for that method.
+  | Points | Static Method | List Method |
+  |--------|---------------|-------------|
+  | **(3 points)** | `demoMap` | [`<R> GenList<R> map(Function<T,R> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#map-java.util.function.Function-) |
+  | **(3 points)** | `demoReduce` | [`T reduce(T start, BinaryOperator<T> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#reduce-T-java.util.function.BinaryOperator-) |
+  | **(3 points)** | `demoFilter` | [`GenList<T> filter(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#filter-java.util.function.Predicate-) |
+  | **(2 points)** | `demoMin` | [`T min(Comparator<T> c)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#min-java.util.Comparator-) |
+  | **(2 points)** | `demoAllMatch` | [`boolean allMatch(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#allMatch-java.util.function.Predicate-) |
   
-     * Use lambda expressions to implement any functional interfaces required as method
-       parameters. You cannot create separate `.java` files to implement these interfaces.
-
-* **(100 points) Test Cases**: The bulk of this project will be graded
-  based on 50 JUnit test cases, each worth 2 points. This is the same as
-  someone using the classes you wrote based purely on the interface
-  definitions. If you implement the interface correctly, then you should
-  pass the associated test cases. 
+  * What is meaningful? You need to make the code, documentation, and the printout clear such 
+    that anyone who is reading it can understand what is going on. The scenarios
+    that you demo should not be trivial. In most cases, this will involve using 
+    some of your other list methods in conjunction with the ones that are requred 
+    below. 
   
 ### Non-Functional Requirements
 
@@ -288,7 +281,7 @@ made to modify your submission to evaluate other requirements.
   package for the source code should be a direct subdirectory of 
   `cs1302-genlistadt` called `src`. When the project is compiled, 
   the `-d` option should be used with `javac` to make the default package 
-  for compiled code a direct subdirectory of `cs1302-listadt` 
+  for compiled code a direct subdirectory of `cs1302-genlistadt` 
   called `bin`. 
   
   If you follow this structure, then you would type the following to compile 
@@ -296,8 +289,8 @@ made to modify your submission to evaluate other requirements.
   directory `cs1302-listadt`:
   
   ```
-  $ javac -cp listadt.jar -d bin src/cs1302/list/ArrayStringList.java
-  $ javac -cp listadt.jar -d bin src/cs1302/list/LinkedStringList.java
+  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/list/LinkedStringList.java
+  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/list/LinkedStringList.java
   ```
   
   Remember, when you compile `.java` files individually, there might be 
@@ -322,7 +315,7 @@ made to modify your submission to evaluate other requirements.
   compilation dependencies. You should remove any `.java` files that you
   do not need before submission. 
   
-* **`cs1302.list.LinkedList` Storage Requirement:**
+* **`cs1302.gelist.LinkedGenList<T>` Storage Requirement:**
   You must use a sequence of node (or container) objects
   for this class's storage. This type of storage is limited only by the 
   available memory for the Java program
