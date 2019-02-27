@@ -118,6 +118,12 @@ The actual functionality is tested using test cases.
     definitions. If you implement the interface correctly, then you should
     pass the associated test cases. 
     
+  * An interactive tester will be provided to you via Piazza a couple days after
+    the project has been released. This tester will contain a special, interactive
+    driver-type class that you can use to partially test your `LinkedGenList<T>`
+    class. This tester is not what will be used during grading, however, you
+    may find it useful when writing your own tests.
+    
 * **(13 points) `LinkedListTest`:** Create the `cs1302.genlist.LinkedListTest` class
   to demo proper use of some of the more interesting methods provided by the
   interface using your `LinkedGenList<T>` class. In this class, you are required to
