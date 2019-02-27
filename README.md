@@ -111,7 +111,7 @@ require the presence of a method related to a particular functionality.
 The actual functionality is tested using test cases.
 
 * **(87 points) `LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` class such
-  that it properly implements the `cs1302.util.GenList<T>` interface 
+  that it properly implements the `cs1302.genlistadt.GenList<T>` interface 
   with additional requirements listed below. 
 
   * You must explicitly define and document all constructors required by
@@ -303,8 +303,8 @@ made to modify your submission to evaluate other requirements.
   directory `cs1302-genlistadt`:
   
   ```
-  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/list/LinkedGenList.java
-  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/list/LinkedGenList.java
+  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
+  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
   ```
   
   Remember, when you compile `.java` files individually, there might be 
