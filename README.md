@@ -49,6 +49,11 @@ command while inside of your project directory.
 
 ## Project Description
 
+After implementing the `StringList` interface a couple different ways, your project
+manager discussed the finished product with the client. Well, it turns out that the
+client was only using strings as "an example" of what they wanted. In reality, the
+client wanted a generic list implementation.
+
 In this project, you are tasked with implementing a generic list interface `GenList<T>`
 that provides stream-like functionality. Your implementation must use a linked list
 as the internal storage for the list. Each node of the linked list should contain a 
