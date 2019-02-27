@@ -135,7 +135,7 @@ The actual functionality is tested using test cases.
   interface using your `LinkedGenList<T>` class. In this class, you are required to
   create a static method that demos a `GenList<T>` method on two different
   reference types in a meaningful way **using multiple lambda expressions**. 
-  You need one of these static demo methods for each each of the following 
+  You need one of these static demo methods for each of the following 
   interface methods:
   
   | Points | Static Method | List Method |
@@ -428,7 +428,7 @@ Below are some frequently asked questions related to this project.
    } // get
    ```
    
-1. **What is `listadt.jar`?**
+1. **What is `genlistadt.jar`?**
 
    In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single 
    compressed file. Typically a JAR file contains the package directories and `.class` files
@@ -438,7 +438,7 @@ Below are some frequently asked questions related to this project.
    `listadt.jar`, then you can use the following command to take peek into the archive:
    
    ```
-   $ jar -tf listadt.jar
+   $ jar -tf genlistadt.jar
    ```
    
    You shold notice that the top-level directory in the JAR file is `cs1302`, which means that
