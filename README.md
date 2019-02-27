@@ -75,6 +75,8 @@ changes the behavior of the method.
 methods are new for this project, there are methods that existed in the previous list project that
 are now genericized. Some such method may also have updated API documentation. For example, the 
 `add` method that takes another list as a parameter is now required to handle self reference.
+There are also methods that were optional / extra credit in the previous project that
+are now mandatory (e.g., the `itherator` method).
 
 Implementors are always free to implement additional methods in addition
 to the ones defined by the interface. However, they should not assume that
