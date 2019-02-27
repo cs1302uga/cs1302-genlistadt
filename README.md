@@ -65,10 +65,10 @@ Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method.
 
-Pay close attention to API documentation for each and every method. While some methods
-are new for this project, there are methods that existed in the previous project now
-with updated API documentation. For example, the `add` method that takes another list
-as a parameter is now required to handle self reference.
+**WARNING:** Pay close attention to the API documentation for each and every method. While some 
+methods are new for this project, there are methods that existed in the previous list project that
+are now genericized. Some such method may also have updated API documentation. For example, the 
+`add` method that takes another list as a parameter is now required to handle self reference.
 
 Implementors are always free to implement additional methods in addition
 to the ones defined by the interface. However, they should not assume that
