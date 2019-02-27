@@ -286,17 +286,17 @@ made to modify your submission to evaluate other requirements.
   
   If you follow this structure, then you would type the following to compile 
   your code, assuming you are in the top-level project 
-  directory `cs1302-listadt`:
+  directory `cs1302-genlistadt`:
   
   ```
-  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/list/LinkedStringList.java
-  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/list/LinkedStringList.java
+  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/list/LinkedGenList.java
+  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/list/LinkedGenList.java
   ```
   
   Remember, when you compile `.java` files individually, there might be 
   dependencies between the files. In such cases, the order in which you
   compile the code matters. Also, if more than one default package is needed
-  (e.g., `listadt.jar` and some other directory like `bin`), then a colon `:` 
+  (e.g., `genlistadt.jar` and some other directory like `bin`), then a colon `:` 
   can be used to separate each path in a list of multiple paths supplied
   to `-cp`. For an example, see 
   ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
@@ -315,17 +315,24 @@ made to modify your submission to evaluate other requirements.
   compilation dependencies. You should remove any `.java` files that you
   do not need before submission. 
   
-* **`cs1302.gelist.LinkedGenList<T>` Storage Requirement:**
-  You must use a sequence of node (or container) objects
-  for this class's storage. This type of storage is limited only by the 
-  available memory for the Java program
-  using the `LinkedList` object. You may find sections 13.1 and
-  13.2 of the LDC textbook useful reference material for this class.
-  If you use Java's `java.util.LinkedList` class or something similar, then that 
-  will result in an immediate violation of this absolute requirement, 
+* **`cs1302.genlist.LinkedGenList<T>` Storage Requirement:**
+  You must use a sequence of generic node (or container) objects
+  for this class's storage. The `Node` class is not provided for you.
+  You will need to make your own as a separate generic class. 
+  If you use Java's `java.util.LinkedList` class or something similar, then 
+  that will result in an immediate violation of this absolute requirement, 
   regardless of any use of any `Node` objects elsewhere in the class.
   This requirement also prohibits any use of third-party implementations 
-  of list or list-like interfaces.
+  of list or list-like interfaces. You may not use arrays in the
+  `LinkedGenList<T>` class anywhere except in the `toArray` method --
+  this also prohibits the use of `toArray` elsewhere in the class.
+  
+* **No Stream API:**
+  You are not allowed to use built-in Java streams to implement any
+  part of this project. Use of any class that implements
+  `java.util.stream.Stream<T>` is prohibited. If you use Java's stream
+  interface or something similar, then that will result in an immediate
+  violation of this absolute requirement.
 
 * **No Static Variables:** Use of static variables is 
   not allowed for this assignment. However, static constants are permitted.
@@ -334,7 +341,7 @@ made to modify your submission to evaluate other requirements.
 
 This project will be graded using unit tests, none of which will be made 
 available before the project deadline. Graders will also inspect your implementation
-of `LinkedListTest` to ensure proper use of JUnit tests and lambda expressions.
+of `LinkedGenListTest` to ensure proper use of lambda expressions.
 
 ## How to Download the Project
 
@@ -342,10 +349,10 @@ On Nike, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
 
 ```
-$ git clone https://github.com/cs1302uga/cs1302-api-fun.git
+$ git clone https://github.com/cs1302uga/cs1302-genlistadt.git
 ```
 
-This should create a directory called `cs1302-api-fun` in
+This should create a directory called `cs1302-genlistadt` in
 your present working directory that contains a clone of the 
 project's respository. Take a look around.
 
@@ -370,15 +377,15 @@ then the name of your project directory is likely `cs1302-listadt`.
 While in your project's parent directory, execute the following command: 
 
 ```
-$ submit cs1302-api-fun cs1302a
+$ submit cs1302-genlistadt cs1302a
 ```
 
 It is also a good idea to email a copy to yourself. To do this, simply execute 
 the following command, replacing the email address with your email address:
 
 ```
-$ tar zcvf cs1302-api-fun.tar.gz cs1302-api-fun
-$ mutt -s "[cs1302] cs1302-api-fun" -a cs1302-api-fun.tar.gz -- your@email.com < /dev/null
+$ tar zcvf cs1302-genlistadt.tar.gz cs1302-genlistadt
+$ mutt -s "[cs1302] cs1302-genlistadt" -a cs1302-genlistadt.tar.gz -- your@email.com < /dev/null
 ```
 
 If you have any problems submitting your project then please send a private
