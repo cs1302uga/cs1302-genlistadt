@@ -124,7 +124,7 @@ The actual functionality is tested using test cases.
     class. This tester is not what will be used during grading, however, you
     may find it useful when writing your own tests.
     
-* **(13 points) `LinkedListTest`:** Create the `cs1302.genlist.LinkedListTest` class
+* **(13 points) `LinkedGenListTest`:** Create the `cs1302.genlist.LinkedGenListTest` class
   to demo proper use of some of the more interesting methods provided by the
   interface using your `LinkedGenList<T>` class. In this class, you are required to
   create a static method that demos a `GenList<T>` method on two different
