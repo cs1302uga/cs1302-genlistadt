@@ -10,7 +10,7 @@ at the University of Georgia.
 
 There are different deadline options for this project. Students who perform their
 final submission via the `submit` command before the date/times listed below
-automatically receive the associated extra credit. The late penalty does not
+automatically receive the associated extra credit. The late penalty does not start
 applying until after the final date listed. 
 
 * **FRI 2019-03-08 (Mar 08) @ 11:55 PM EST (`+20` Extra Credit)**
