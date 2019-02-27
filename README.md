@@ -1,6 +1,6 @@
 # CSCI 1302 - GenList ADT v2019.sp
 
-![Trains are like linked lists...]k(https://i.imgur.com/MdPMTcO.png)
+![Trains are like linked lists...](https://i.imgur.com/MdPMTcO.png)
 
 This document contains the description for the Generic List API 
 project assigned to the students in the Spring 2019 CSCI 1302 classes
