@@ -425,7 +425,7 @@ Below are some frequently asked questions related to this project.
    if you choose to do this. For example, you might write something like this for the `get(int)`
    method:
    ```
-   public String get(int index) {
+   public T get(int index) {
        throw new UnsupportedOperationException("not yet implemented");
    } // get
    ```
