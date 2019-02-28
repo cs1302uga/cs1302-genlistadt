@@ -306,7 +306,7 @@ made to modify your submission to evaluate other requirements.
   
   ```
   $ javac -cp lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
-  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
+  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
   ```
   
   Remember, when you compile `.java` files individually, there might be 
