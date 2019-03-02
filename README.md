@@ -150,11 +150,14 @@ The actual functionality is tested using test cases.
   | **(2 points)** | `demoMin` | [`T min(Comparator<T> c)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#min-java.util.Comparator-) |
   | **(2 points)** | `demoAllMatch` | [`boolean allMatch(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#allMatch-java.util.function.Predicate-) |
   
-  * What is meaningful? You need to make the code, documentation, and the printout clear such 
+  * **What is meaningful?** You need to make the code, documentation, and the printout clear such 
     that anyone who is reading it can understand what is going on. The scenarios
     that you demo should not be trivial. In most cases, this will involve using 
     some of your other list methods in conjunction with the ones that are requred 
-    below. 
+    above.
+    
+  * **Do I need a `main` method?** You should create a `main` method that calls each of the
+    demo functions. Please make sure that your program output is legible. 
   
 ### Non-Functional Requirements
 
