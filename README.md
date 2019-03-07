@@ -110,6 +110,8 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
+#### `LinkedGenList<T>`
+
 * **(87 points) `LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` class such
   that it properly implements the `cs1302.genlistadt.GenList<T>` interface 
   with additional requirements listed below. 
@@ -134,7 +136,7 @@ The actual functionality is tested using test cases.
     class. This tester is not what will be used during grading, however, you
     may find it useful when _initially_ testing your methods.
 
-<div id="linkedgenlisttest></div>
+#### `LinkedGenListTest`
 
 * **(13 points) `LinkedGenListTest`:** Create the `cs1302.genlist.LinkedGenListTest` class
   to demo proper use of some of the more interesting methods provided by the
