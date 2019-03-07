@@ -142,13 +142,13 @@ The actual functionality is tested using test cases.
   You need one of these static demo methods for each of the following 
   interface methods:
   
-  | Points | Static Method | List Method | Example |
-  |--------|---------------|-------------|---------|
-  | **(3 points)** | `demoMap` | [`<R> GenList<R> map(Function<T,R> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#map-java.util.function.Function-) | Transform an element's value and change its type. |
-  | **(3 points)** | `demoReduce` | [`T reduce(T start, BinaryOperator<T> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#reduce-T-java.util.function.BinaryOperator-) | Concatenation, addition, squaring, multiplying, etc. is okay. |
-  | **(3 points)** | `demoFilter` | [`GenList<T> filter(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#filter-java.util.function.Predicate-) | Make use of a compound boolean expression.
-  | **(2 points)** | `demoMin` | [`T min(Comparator<T> c)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#min-java.util.Comparator-) | Use an ordering based on parts/digits of the elements instead of the entire elements. |
-  | **(2 points)** | `demoAllMatch` | [`boolean allMatch(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#allMatch-java.util.function.Predicate-) | Make use of a compound boolean expression. |
+  | Points | Static Method | List Method | Example of Non-Trivial |
+  |--------|---------------|-------------|------------------------|
+  | **3** | `demoMap` | [`<R> GenList<R> map(Function<T,R> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#map-java.util.function.Function-) | Transform an element's value and change its type. |
+  | **3** | `demoReduce` | [`T reduce(T start, BinaryOperator<T> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#reduce-T-java.util.function.BinaryOperator-) | Concatenation, addition, squaring, multiplying, etc. is okay. |
+  | **3** | `demoFilter` | [`GenList<T> filter(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#filter-java.util.function.Predicate-) | Make use of a compound boolean expression.
+  | **2** | `demoMin` | [`T min(Comparator<T> c)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#min-java.util.Comparator-) | Use an ordering based on parts/digits of the elements instead of the entire elements. |
+  | **2** | `demoAllMatch` | [`boolean allMatch(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#allMatch-java.util.function.Predicate-) | Make use of a compound boolean expression. |
   
   * **What is meaningful?** You need to make the code, documentation, and the printout clear such 
     that anyone who is reading it can understand what is going on. The scenarios
