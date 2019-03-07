@@ -133,7 +133,9 @@ The actual functionality is tested using test cases.
     driver-type class that you can use to partially test your `LinkedGenList<T>`
     class. This tester is not what will be used during grading, however, you
     may find it useful when _initially_ testing your methods.
-    
+
+<div id="linkedgenlisttest></div>
+
 * **(13 points) `LinkedGenListTest`:** Create the `cs1302.genlist.LinkedGenListTest` class
   to demo proper use of some of the more interesting methods provided by the
   interface using your `LinkedGenList<T>` class. In this class, you are required to
