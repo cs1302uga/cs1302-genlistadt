@@ -141,10 +141,13 @@ The actual functionality is tested using test cases.
 * **(13 points) `LinkedGenListTest`:** Create the `cs1302.genlist.LinkedGenListTest` class
   to demo proper use of some of the more interesting methods provided by the
   interface using your `LinkedGenList<T>` class. In this class, you are required to
-  create a static method that demos a `GenList<T>` method on two different
-  reference types in a meaningful way **using multiple lambda expressions**. 
-  You need one of these static demo methods for each of the following 
-  interface methods:
+  create a set of static methods that each demo some calls to a particular `GenList<T>` method
+  in a meaningful way **using multiple lambda expressions**. Each demo method needs to
+  involve at least two different parameterizations of `GenList<T>` (i.e., at least two
+  different replacements for `T`). For each parameterization of `GenList<T>` within a
+  demo method, you should use a unique lambda expression applicable to the type
+  parameterization and interface method that you are testing. You need one of these 
+  static demo methods for each of the following `GenList<T>` methods:
   
   | Points | Static Method | List Method | Example of Non-Trivial |
   |--------|---------------|-------------|------------------------|
@@ -162,6 +165,9 @@ The actual functionality is tested using test cases.
     
   * **Do I need a `main` method?** You should create a `main` method that calls each of the
     demo functions. Please make sure that your program output is legible. 
+    
+  * **Helper Methods?** You may find it useful to create a separate method for each parameterization 
+    and have the main demo method call these helper methods. 
   
 ### Non-Functional Requirements
 
