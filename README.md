@@ -16,6 +16,13 @@ applying until after the final date listed.
 * **FRI 2019-03-08 (Mar 08) @ 11:55 PM EST (`+20` Extra Credit)**
 * ~**SUN 2019-03-10 (Mar 10) @ 11:55 PM EST (`+10` Extra Credit)**~
 * ~**TUE 2019-03-12 (Mar 12) @ 11:55 PM EST (`+00` Extra Credit)**~
+
+Due to due to scheduled maintenance, the second and third deadline options have
+been extended (see [Piazza @1257](https://piazza.com/class/jpupoaxnvvs497?cid=1257)).
+In general, downtime due to scheduled maintenance is not considered an excuse for 
+late work as scheduled maintenance like this is announced a couple weeks ahead of 
+time by EITS / Franklin OIT and submissions can be made any time before a due date/time.
+Here are the updated deadlines:
 * **MON 2019-03-11 (Mar 11) @ 11:55 PM EST (`+10` Extra Credit)**
 * **WED 2019-03-13 (Mar 13) @ 11:55 PM EST (`+00` Extra Credit)**
 
