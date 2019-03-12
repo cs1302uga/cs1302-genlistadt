@@ -290,7 +290,7 @@ point total. That is, they are all or nothing.
     in that file instead of `~/.emacs`. 
 
 * **Javadoc Documentation (25 points):** All methods and classes needs to be __fully documented__
-  using Javadoc comments and appropriate Jaadoc tags. Each comment should provide a description 
+  using Javadoc comments and appropriate Javadoc tags. Each comment should provide a description 
   of the method's functionality in the first sentence of the comment. This sentence needs to be
   a grammatically correct English sentence with proper punctuation. Further description can be 
   provided in subsequent sentence. 
