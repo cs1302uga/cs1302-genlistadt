@@ -1,4 +1,6 @@
-# CSCI 1302 - GenList ADT v2019.sp
+# CSCI 1302 - GenList ADT v2019.fa
+
+![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
 ![Trains are like linked lists...](https://i.imgur.com/MdPMTcO.png)
 
@@ -10,21 +12,12 @@ at the University of Georgia.
 
 There are different deadline options for this project. Students who perform their
 final submission via the `submit` command before the date/times listed below
-automatically receive the associated extra credit. The late penalty does not start
-applying until after the final date listed. 
+automatically receive the associated Submission-Based (SB) extra credit. There may be
+other extra credit opportunities present in the project description. The late 
+penalty does not start applying until after the final date listed. 
 
-* **FRI 2019-03-08 (Mar 08) @ 11:55 PM EST (`+20` Extra Credit)**
-* ~**SUN 2019-03-10 (Mar 10) @ 11:55 PM EST (`+10` Extra Credit)**~
-* ~**TUE 2019-03-12 (Mar 12) @ 11:55 PM EST (`+00` Extra Credit)**~
-
-Due to due to scheduled maintenance, the second and third deadline options have
-been extended (see [Piazza @1257](https://piazza.com/class/jpupoaxnvvs497?cid=1257)).
-In general, downtime due to scheduled maintenance is not considered an excuse for 
-late work as scheduled maintenance like this is announced a couple weeks ahead of 
-time by EITS / Franklin OIT and submissions can be made any time before a due date/time.
-Here are the updated deadlines:
-* **MON 2019-03-11 (Mar 11) @ 11:55 PM EST (`+10` Extra Credit)**
-* **WED 2019-03-13 (Mar 13) @ 11:55 PM EST (`+00` Extra Credit)**
+* **SUN 2019-10-20 (Oct 20) @ 11:55 PM EST (`+10` SB Extra Credit)**
+* **TUE 2019-10-22 (Oct 22) @ 11:55 PM EST (`+0` SB Extra Credit)**~
 
 ## Table of Contents
 
@@ -48,7 +41,7 @@ likely make your copy of the project publicly visible. Please follow the
 instructions contained in the 
 [How to Download the Project](#how-to-download-the-project)
 section below in order to do your development on nike. Furthermore, you must adhere
- to the copyright notice and licensing information at the bottom of this document.
+to the copyright notice and licensing information at the bottom of this document.
 
 ## Updates
 
@@ -65,8 +58,8 @@ client wanted a generic list implementation. Without breaking a sweat, your proj
 manager assigned this new, updated task to you.
 
 In this project, you are tasked with implementing a generic list interface `GenList<T>`
-that provides stream-like functionality. Your implementation must use a linked list
-as the internal storage for the list. Each node of the linked list should contain a 
+that also provides some additional functionality. Your implementation must use a linked 
+list as the internal storage for the list. Each node of the linked list should contain a 
 generic type object along with a pointer to another node of the same type. The provided 
 JAR file does not contain the generic node class. However, you are welcome to use any code you 
 created in a class exercise as long as you can explain any part of the code, if asked 
@@ -74,7 +67,8 @@ to do so.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html">here</a>
+for the interface [here](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
+([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/))
 as well as a `.jar` file containing the compiled version of the interface..
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
@@ -98,6 +92,7 @@ help avoid redundancy and promote code reuse.
 ### Suggested Reading
 
 * [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
+  ([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/))
 
 ### Learning Outcomes
 
@@ -109,7 +104,7 @@ help avoid redundancy and promote code reuse.
 ## Project Requirements & Grading
 
 This assignment is worth 100 points. The lowest possible grade is 0, and the 
-highest possible grade is 120 based on the date of your last submission
+highest possible grade is 110 based on the date of your last submission
 (see [Deadline Options](#deadline-options)).
 
 ### Functional Requirements
@@ -185,126 +180,23 @@ not satisfied. In order to emphasize the importance of these requirements,
 non-compliance results in the full point amount being subtracted from your
 point total. That is, they are all or nothing. 
   
-* **(25 points) Code Style Guidelines:** You should be consistent with the style 
-  aspect of your code in order to promote readability. All of the individual code
-  style guidelines listed below are part of a single non-functional requirement
-  that, like the others, is all or nothing. Besides consistency, the
-  following conventions will be enforced:
+* **(0 points) [RECOMMENDED] No Static Variables:** Use of static variables
+  is not appropriate for this assignment. However, static constants 
+  and static utility and/or test methods are perfectly fine.
   
-  * **Reference type names are written in _UpperCamelCase_.** Class names are  
-    typically nouns or noun phrases. For example, `Character` or `ImmutableList`. 
-    Interface names may also be nouns or noun phrases (for example, `List`), but 
-    may sometimes be adjectives or adjective phrases instead (for example, 
-    `Readable`).
+* **(20 points) Code Style Guidelines:** You should be consistent with the style 
+  aspect of your code in order to promote readability. Every `.java` file that
+  you include as part of your submission for this project must be in valid style 
+  as defined in the [CS1302 Code Style Guide](https://github.com/cs1302uga/cs1302-styleguide).
+  All of the individual code style guidelines listed in that document are part 
+  of this single non-functional requirement. Like the other non-functional
+  requirements, this requirement is all or nothing. 
   
-  * **Method names are written in _lowerCamelCase_.** Method names are also 
-    typically verbs or verb phrases. For example, `sendMessage` or `stop`.
-  
-  * **Braces are always used where optional.** Braces should be used with `if`, 
-    `else`, `for`, `do`, and `while` statements, even when the body is empty or 
-    contains only a single statement.
-	
-  * **Block Indentation: 4 spaces.** Each time a new block or block-like construct 
-	is 	opened, the indent increases by four spaces. When the block ends, the indent 
-	returns to the previous indent level. The indent level applies to both code 
-	and comments throughout the block. 
-	
-    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
-    make tabs for _new_ files comply with this requirement:
-	```
-	(setq-default indent-tabs-mode nil)
-	(setq-default c-default-style "linux"
-                      c-basic-offset 4)
-	(setq-default tab-width 4)
-	(setq indent-line-function 'insert-tab)
-	```
-    
-  * **Column limit: 100.** You should limit the number of characters, including
-    whitespace, on any given line to 100 characters. Except as noted below, any 
-    line that would exceed this limit must be manually line-wrapped in a
-    consistent manner. Exceptions to the column limit include:
-    
-    * Lines where obeying the column limit is not possible (for example, a long 
-      URL in Javadoc, or a long JSNI method reference).
-    * In `package` and `import` statements.
-    * Command line input examples in a comment that may be cut-and-pasted into 
-      a shell.
-      
-    If you use Emacs, then you can add the following lines to your `~/.emacs` file to 
-    highlight characters that exceed the column limit:
-    ```
-    ;; check for lines that exceed some column limit
-    (setq-default
-     whitespace-line-column 100
-     whitespace-style '(face lines-tail))
-    (add-hook 'prog-mode-hook #'whitespace-mode)
-    ```
-    If you would rather have Emacs highlight entire lines that exceed the column
-    limit, then use the following instead (not in addition to):
-    ```
-    ;; check for lines that exceed some column limit
-    (setq-default
-     whitespace-line-column 100
-     whitespace-style '(face lines))
-    (add-hook 'prog-mode-hook #'whitespace-mode)
-    ```
-    You can create the `~/.emacs` file if it does not exist. If you have
-    an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
-    in that file instead of `~/.emacs`. 
-    
-    If, after adding the configuration lines above, you still have trouble finding
-    lines that exceed the column limit, then you can ask Emacs to mark newlines with
-    a `$` by typing `M-x whitespace-newline-mode` then `RET` (return). 
-      
-  * **Method height <= window height.** You should limit the number of lines for
-    a method so that the entire method can be seen on the screen at once. This
-    includes the line(s) with the method's signature and opening curly brace, all
-    lines in the body of the mthod (including blank lines), and the line with
-    the method's ending curly brace. The method height does not include a
-    method's Javadoc comment, however, it does include any comments contained
-    within the body of the method. 
-    
-    Of all the style guidelines, this is the probably the most subjective and 
-    hardest to grade because everyone might have a different window size due
-    to different terminal emulator and physical screen size configurations. 
-    Therefore, graders will be checking for compliance with the spirit
-    of this guideline, which is: methods that are too big and/or repetitive 
-    should be refactored to include proper looping constructs and/or broken
-    up into smaller methods to improve readability.
-    
-    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
-    enable line numbers:
-    ```
-    ;; add line numbers
-    (global-linum-mode 1)
-    
-    ;; display line numbers and column numbers
-    (setq line-number-mode t)
-    (setq column-number-mode t)
-    
-    ;; make sure the line numbers don't touch the text
-    (setq linum-format "%d ")
-    ```
-    You can create the `~/.emacs` file if it does not exist. If you have
-    an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
-    in that file instead of `~/.emacs`. 
+  **NOTE:** The [CS1302 Code Style Guide](https://github.com/cs1302uga/cs1302-styleguide)
+  includes instructions on how to use the `checkstyle` program to check
+  your code for compliance on Nike.  
 
-* **Javadoc Documentation (25 points):** All methods and classes needs to be __fully documented__
-  using Javadoc comments and appropriate Javadoc tags. Each comment should provide a description 
-  of the method's functionality in the first sentence of the comment. This sentence needs to be
-  a grammatically correct English sentence with proper punctuation. Further description can be 
-  provided in subsequent sentence. 
-  
-  Even if documentation is inherited from an interface, you must explicitly include a 
-  Javadoc comment with either a new description (if that makes sense) or make proper use
-  of the `{@inheritDoc}` tag.
-
-  It should be noted that we do expect you to provide a Javadoc comment for each class
-  in addition to a comment for each method within a class. The Javadoc comment
-  for a class is placed directly above the class declaration as seen in the examples
-  provided in the link referenced earlier. 
-
-* **In-line Documentation (25 points):** Code blocks should be adequately documented
+* **In-line Documentation (10 points):** Code blocks should be adequately documented
   using in-line comments. This is especially necessary when a block of code
   is not immediately understood by a reader (e.g., yourself or the grader).
 
@@ -343,8 +235,7 @@ made to modify your submission to evaluate other requirements.
 * __Development Environment:__ This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
   version of Java 8 that is setup according to the instructions provided
-  by your instructor. For Spring 2019, these instructions were posted on
-  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
+  by your instructor. 
   
   If you decide to introduce additional `.java` files into your project,
   then they are expected to fulfill all non-functional and absolute requirements, 
@@ -372,9 +263,6 @@ made to modify your submission to evaluate other requirements.
   interface or something similar, then that will result in an immediate
   violation of this absolute requirement.
 
-* **No Static Variables:** Use of static variables is 
-  not allowed for this assignment. However, static constants are permitted.
-
 ### Grading
 
 This project will be graded using unit tests, none of which will be made 
@@ -387,7 +275,7 @@ On Nike, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
 
 ```
-$ git clone https://github.com/cs1302uga/cs1302-genlistadt.git
+$ git clone e --depth 1 https://github.com/cs1302uga/cs1302-genlistadt.git
 ```
 
 This should create a directory called `cs1302-genlistadt` in
@@ -471,6 +359,62 @@ Below are some frequently asked questions related to this project.
    the JAR file itself can serve as the default package for compiled code--this is why we
    use with `-cp` in examples given elsewhere in this project description.
 
+1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
+
+   It doesn't work because the `javadoc` tool requires the source code in order to automatically
+   pull the text of comments from supertypes when applicable. We did not provide you with the
+   source code for the interface, so this is working as intended. You can use the `-link` option
+   to have website links to the interface documentation and the `-classpath` option to add the
+   `listadt.jar` file to the classpath (similar to `-cp` with `javac`). For example 
+   (see the note below if you have problems with this command):
+   
+   ```
+   $ javadoc USUAL_OPTIONS_HERE \
+     -classpath listadt.jar \
+     -link https://docs.oracle.com/javase/8/docs/api \
+     -link http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc
+   ```
+   
+   **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
+   space before the `\` at the end of the first two lines. When typing this out, you should type a
+   single space followed by `\`, then immediately press your `RET` key to continue to the next line.
+   If typed correctly, you will see a `>` on the next line and you can continue typing the command.
+   The `\` and `>` characters will NOT be part of the command when you do your final press of the 
+   `RET` key. 
+   
+   Since, in your scenario, the text will not be automatically inherited, we recommend the following
+   compromise. **Do NOT manually copy the entire comment and parameter details from the API website.**
+   Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
+   code that your intent is to inherit the documentation. Something like the following will suffice:
+
+   ```java
+   /**
+    * Summary sentence.
+    *
+    * <p> 
+    * {@inheritDoc}
+    */
+   ```
+   
+   Your generated Javadoc website will contain a nice summary (can be the same as the summary sentence 
+   from the `GenList` API documentation) and, if generated correctly, a link to the `GenList` 
+   API documentation website. You might also add implementation-specific details:
+
+   ```java
+   /**
+    * Summary sentence.
+    *
+    * <p>
+    * {@inheritDoc}
+    *
+    * <p>
+    * A sentence or two concerning how this method behaves in a
+    * particular way due to the underlying implementation.  
+    */
+   ```
+   
+   **NOTE:** The `<p>` tags in the Javadoc comments above just start new paragraphs in the website output.
+   
 Have a question? Please post it on the course Piazza.
 
 <hr/>
