@@ -5,7 +5,7 @@
 ![Trains are like linked lists...](https://i.imgur.com/MdPMTcO.png)
 
 This document contains the description for the Generic List API 
-project assigned to the students in the Spring 2019 CSCI 1302 classes
+project assigned to the students in the **Fall 2019** CSCI 1302 classes
 at the University of Georgia.
 
 ## Deadline Options
