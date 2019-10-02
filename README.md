@@ -357,12 +357,12 @@ Below are some frequently asked questions related to this project.
    In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single 
    compressed file. Typically a JAR file contains the package directories and `.class` files
    for a library. This is just like the `bin` directory that you are used to, except it's all
-   bundled into a single file. For example, the `listadt.jar` file contains the package directories
-   and `.class` files for `cs1302.listadt.StringList`. If you are in the same directory as
-   `listadt.jar`, then you can use the following command to take peek into the archive:
+   bundled into a single file. For example, the `genlistadt.jar` file contains the package directories
+   and `.class` files for `cs1302.genlistadt.GenList`. If you are in the same directory as
+   `glistadt.jar`, then you can use the following command to take peek into the archive:
    
    ```
-   $ jar -tf genlistadt.jar
+   $ jar -tf lib/genlistadt.jar
    ```
    
    You shold notice that the top-level directory in the JAR file is `cs1302`, which means that
@@ -380,7 +380,7 @@ Below are some frequently asked questions related to this project.
    
    ```
    $ javadoc USUAL_OPTIONS_HERE \
-     -classpath listadt.jar \
+     -classpath lib/genlistadt.jar \
      -link https://docs.oracle.com/javase/8/docs/api \
      -link http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc
    ```
