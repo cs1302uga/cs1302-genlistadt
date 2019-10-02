@@ -116,10 +116,12 @@ The actual functionality is tested using test cases.
 
 #### `LinkedGenList<T>`
 
-* **(87 points) `LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` class such
-  that it properly implements the `cs1302.genlistadt.GenList<T>` interface 
+* **(87 points) `LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` 
+  class such that it properly implements the `cs1302.genlistadt.GenList<T>` interface 
   with additional requirements listed below. 
 
+  * The FQN for this generic class is `cs1302.genlist.LinkedGenList`. 
+  
   * You must explicitly define and document all constructors required by
     the interface API documentation.
     
