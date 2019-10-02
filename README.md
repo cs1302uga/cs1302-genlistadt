@@ -287,7 +287,7 @@ On Nike, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
 
 ```
-$ git clone e --depth 1 https://github.com/cs1302uga/cs1302-genlistadt.git
+$ git clone --depth 1 https://github.com/cs1302uga/cs1302-genlistadt.git
 ```
 
 This should create a directory called `cs1302-genlistadt` in
