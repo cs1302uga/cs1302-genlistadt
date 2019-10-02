@@ -134,11 +134,21 @@ The actual functionality is tested using test cases.
     definitions. If you implement the interface correctly, then you should
     pass the associated test cases. 
     
-  * An interactive tester will be provided to you via Piazza a couple days after
-    the project has been released. This tester will contain a special, interactive
-    driver-type class that you can use to partially test your `LinkedGenList<T>`
-    class. This tester is not what will be used during grading, however, you
-    may find it useful when _initially_ testing your methods.
+  * **You are NOT permitted to share test code for this project.** However, if you have
+    access to test code for the `StringList` project, then you are free to personally
+    adapt that code to test your generic implementation. Remember,
+    if you decide to introduce additional `.java` files into your project,
+    then they are expected to fulfill all non-functional and absolute requirements, 
+    even if the main parts of the project do not use them. Furthermore. if you adapt
+    test code originally authored by someone else, then please include the following
+    snippet in any relevant Javadoc comments:
+    
+    ```java
+     * <p>
+     * This is based on test code originally authored by FALL_2019_STUDENT_NAME, 
+     * which was provided by the official Piazza post
+     * <a href="https://piazza.com/class/jz31ce2e6ph6e1?cid=652">here<a>.
+     ```
 
 #### `LinkedGenListTest`
 
