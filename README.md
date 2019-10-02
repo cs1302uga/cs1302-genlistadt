@@ -17,7 +17,7 @@ other extra credit opportunities present in the project description. The late
 penalty does not start applying until after the final date listed. 
 
 * **SUN 2019-10-20 (Oct 20) @ 11:55 PM EST (`+10` SB Extra Credit)**
-* **TUE 2019-10-22 (Oct 22) @ 11:55 PM EST (`+0` SB Extra Credit)**~
+* **TUE 2019-10-22 (Oct 22) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
 ## Table of Contents
 
