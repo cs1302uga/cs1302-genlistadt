@@ -335,16 +335,16 @@ is probably not the best idea.
 
 Below are some frequently asked questions related to this project.
 
-1. **Name Clash? To methods have the same erasure, yet neither overrides the other?**
+1. **Name Clash? Two methods have the same erasure, yet neither overrides the other?**
 
-   **Background:** When the Java compiler is tasked with compiling a generic class or 
+   _Background:_ When the Java compiler is tasked with compiling a generic class or 
    interface, it performs a series of internal steps, known as 
    [**_type erasure_**](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) 
    to ensure that a single compiled class or interface is produced. Contrast this with other 
    languages, like C++, where a generic-like templated class may result in multiple compiled 
    classes. 
    
-   **Likely Culprit:** Your generic class is likely declared as implementing the raw type
+   _Likely Culprit:_ Your generic class is likely declared as implementing the raw type
    of generic interface. Implementing the raw type leads to one set of abstract methods 
    coming from the interface that don't quite match up with the methods that you may have
    declared in your class. Since it's two different sets of methods (with the same names), 
@@ -356,8 +356,7 @@ Below are some frequently asked questions related to this project.
    your class is often used in the interface parameterization. 
    
    
-   Here is a general,
-   project-independent example:
+   Here is a general, project-independent example:
    
    ```
    public class MyClass<T> implements GenericInterface {         // BAD; implements raw type!
