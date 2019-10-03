@@ -358,15 +358,15 @@ Below are some frequently asked questions related to this project.
    
    Here is a general, project-independent example:
    
-   ```
+   ```java
    public class MyClass<T> implements GenericInterface {         // BAD; implements raw type!
    ```
    
-   ```
+   ```java
    public class MyClass<T> implements GenericInterface<String> { // OK; implements GenericInterface<String>
    ```
    
-   ```
+   ```java
    public class MyClass<T> implements GenericInterface<T> {      // OK implements GenericInterface<T>
    ```
    
