@@ -49,6 +49,12 @@ If there has been an update and you have already cloned the project to Nike,
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
 
+* **SAT 2019-10-05:** Updated the 
+  [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
+  ([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/)) with more
+  examples in the _Method Detail_ section of most methods. No actual code changes
+  were made so a "`git pull`" is not needed.
+
 ## Project Description
 
 After implementing the `StringList` interface a couple different ways, your project
