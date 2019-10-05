@@ -53,7 +53,7 @@ command while inside of your project directory.
   [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
   ([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/)) with more
   examples in the _Method Detail_ section of most methods. No actual code changes
-  were made so a "`git pull`" is not needed.
+  were made, therefore, a "`git pull`" is not needed.
 
 ## Project Description
 
