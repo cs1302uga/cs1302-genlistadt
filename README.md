@@ -54,6 +54,12 @@ command while inside of your project directory.
   ([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/)) with more
   examples in the _Method Detail_ section of most methods. No actual code changes
   were made, therefore, a "`git pull`" is not needed.
+  
+* **SAT 2019-10-05:** An interactive tester has been provided to you via 
+  [Piazza @902](https://piazza.com/class/jz31ce2e6ph6e1?cid=902). 
+  This tester contains an interactive driver class that you can use to partially 
+  test your `LinkedGenList<T>` class. This tester is not what will be used during 
+  grading, however, you may find it useful when initially testing your methods.
 
 ## Project Description
 
