@@ -16,6 +16,7 @@ automatically receive the associated Submission-Based (SB) extra credit. There m
 other extra credit opportunities present in the project description. The late 
 penalty does not start applying until after the final date listed. 
 
+* **FRI 2019-10-18 (Oct 18) @ 11:55 PM EST (`+20` SB Extra Credit)**
 * **SUN 2019-10-20 (Oct 20) @ 11:55 PM EST (`+10` SB Extra Credit)**
 * **TUE 2019-10-22 (Oct 22) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
@@ -48,6 +49,9 @@ to the copyright notice and licensing information at the bottom of this document
 If there has been an update and you have already cloned the project to Nike, 
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
+
+* **WED 2019-10-09:** Added an additional Submission-Based (SB) extra credit
+  opportunity for final submissions made before FRI 2019-10-18 (Oct 18) @ 11:55 PM EST.
 
 * **SAT 2019-10-05:** Updated the 
   [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
