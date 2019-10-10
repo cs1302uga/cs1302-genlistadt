@@ -247,7 +247,8 @@ made to modify your submission to evaluate other requirements.
   directory `cs1302-genlistadt`:
   
   ```
-  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
+  $ javac -d bin src/cs1302/genlist/YourNodeClassName.java
+  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
   $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
   ```
   
