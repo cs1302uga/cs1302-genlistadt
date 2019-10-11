@@ -240,7 +240,8 @@ made to modify your submission to evaluate other requirements.
   `cs1302-genlistadt` called `src`. When the project is compiled, 
   the `-d` option should be used with `javac` to make the default package 
   for compiled code a direct subdirectory of `cs1302-genlistadt` 
-  called `bin`. 
+  called `bin`. **Any additional classes that you create should
+  be located in the `cs1302.genlist` package.**
   
   If you follow this structure, then you would type the following to compile 
   your code, assuming you are in the top-level project 
@@ -248,6 +249,7 @@ made to modify your submission to evaluate other requirements.
   
   ```
   $ javac -d bin src/cs1302/genlist/YourNodeClassName.java
+  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/genlist/YourIteratorClassName.java
   $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
   $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
   ```
@@ -493,4 +495,3 @@ Copyright &copy; Michael E. Cotterell and the University of Georgia.
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
 The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
 </small>
-
