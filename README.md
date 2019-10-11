@@ -255,7 +255,7 @@ made to modify your submission to evaluate other requirements.
   ```
   
   If your iterator class relies on types other than the interface, then you may need 
-  to also include `bin` in the ~the~ class path when compiling that class.
+  to also include `bin` in the class path when compiling that class.
   
   Remember, when you compile `.java` files individually, there might be 
   dependencies between the files. In such cases, the order in which you
