@@ -254,6 +254,10 @@ made to modify your submission to evaluate other requirements.
   $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
   ```
   
+  If, for some reason, your iterator class relies on types other than the
+  interface, then you may need to also include `bin` in the second compilation
+  command in the example above. 
+  
   Remember, when you compile `.java` files individually, there might be 
   dependencies between the files. In such cases, the order in which you
   compile the code matters. Also, if more than one default package is needed
