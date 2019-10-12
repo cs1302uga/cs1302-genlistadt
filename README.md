@@ -165,7 +165,7 @@ The actual functionality is tested using test cases.
      * <p>
      * This is based on test code originally authored by FALL_2019_STUDENT_NAME, 
      * which was provided by the official Piazza post
-     * <a href="https://piazza.com/class/jz31ce2e6ph6e1?cid=652">here<a>.
+     * <a href="https://piazza.com/class/jz31ce2e6ph6e1?cid=652">here</a>.
      ```
 
 #### `LinkedGenListTest`
