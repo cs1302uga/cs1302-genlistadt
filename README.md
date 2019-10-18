@@ -269,7 +269,8 @@ made to modify your submission to evaluate other requirements.
 * __Development Environment:__ This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
   version of Java 8 that is setup according to the instructions provided
-  by your instructor. 
+  by your instructor. For this requirement, the term *compile* should be interpreted as 
+  *compile with no errors or warnings*.
   
   If you decide to introduce additional `.java` files into your project,
   then they are expected to fulfill all non-functional and absolute requirements, 
