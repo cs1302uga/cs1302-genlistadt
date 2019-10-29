@@ -243,7 +243,7 @@ made to modify your submission to evaluate other requirements.
   called `bin`. **Any additional classes that you create should
   be located in the `cs1302.genlist` package.**
   
-  If you follow this structure, then you would type the following to compile 
+  If you follow this structure, then you might type the following to compile 
   your code, assuming you are in the top-level project 
   directory `cs1302-genlistadt`:
   
