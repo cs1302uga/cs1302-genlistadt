@@ -55,8 +55,7 @@ command while inside of your project directory.
 
 * **SAT 2019-10-05:** Updated the 
   [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
-  ([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/)) with more
-  examples in the _Method Detail_ section of most methods. No actual code changes
+  with more examples in the _Method Detail_ section of most methods. No actual code changes
   were made, therefore, a "`git pull`" is not needed.
   
 * **SAT 2019-10-05:** An interactive tester has been provided to you via 
@@ -84,7 +83,6 @@ to do so.
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
 for the interface [here](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
-([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/))
 as well as a `.jar` file containing the compiled version of the interface..
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
@@ -108,7 +106,6 @@ help avoid redundancy and promote code reuse.
 ### Suggested Reading
 
 * [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
-  ([mirror](https://michaelcotterell.com/cs1302-genlistadt-api/))
 
 ### Learning Outcomes
 
