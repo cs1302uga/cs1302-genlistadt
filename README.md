@@ -1,5 +1,6 @@
-# CSCI 1302 - GenList ADT v2019.fa
+# CSCI 1302 - GenList ADT v2020.sp
 
+<!-- ![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue) //-->
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
 ![Trains are like linked lists...](https://i.imgur.com/MdPMTcO.png)
@@ -50,19 +51,13 @@ If there has been an update and you have already cloned the project to Nike,
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
 
-* **WED 2019-10-09:** Added an additional Submission-Based (SB) extra credit
-  opportunity for final submissions made before FRI 2019-10-18 (Oct 18) @ 11:55 PM EST.
-
-* **SAT 2019-10-05:** Updated the 
-  [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
-  with more examples in the _Method Detail_ section of most methods. No actual code changes
-  were made, therefore, a "`git pull`" is not needed.
-  
+<!--
 * **SAT 2019-10-05:** An interactive tester has been provided to you via 
   [Piazza @902](https://piazza.com/class/jz31ce2e6ph6e1?cid=902). 
   This tester contains an interactive driver class that you can use to partially 
   test your `LinkedGenList<T>` class. This tester is not what will be used during 
   grading, however, you may find it useful when initially testing your methods.
+//-->
 
 ## Project Description
 
@@ -90,7 +85,7 @@ changes the behavior of the method.
 
 **WARNING:** Pay close attention to the API documentation for each and every method. While some 
 methods are new for this project, there are methods that existed in the previous list project that
-are now genericized. Some such method may also have updated API documentation. For example, the 
+are now _genericized_. Some such method may also have updated API documentation. For example, the 
 `add` method that takes another list as a parameter is now required to handle self reference.
 There are also methods that were optional / extra credit in the previous project that
 are now mandatory (e.g., the `iterator` method).
@@ -127,9 +122,11 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
+![Sample UML Diagram](img/genlistadt-uml.png)
+
 #### `LinkedGenList<T>`
 
-* **(87 points) `LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` 
+* **`LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` 
   class such that it properly implements the `cs1302.genlistadt.GenList<T>` interface 
   with additional requirements listed below. 
 
