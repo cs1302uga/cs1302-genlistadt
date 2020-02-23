@@ -122,9 +122,12 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
-<center>
-<img style="align: center;" alt="Sample UML Diagram" src="img/genlistadt-uml.png"/>
-</center>
+While the specific details are listed below, the following diagram 
+illustrates the _potential_ general relationship between your classes 
+and the interface (with instance variables, constructors, and methods omitted 
+from the diagram for brevity):
+
+![Sample UML Diagram](img/genlistadt-uml.png)
 
 #### `LinkedGenList<T>`
 
@@ -143,10 +146,12 @@ The actual functionality is tested using test cases.
     in the [Absolute Requirements](#absolute-requirements) section.
 	
   * The bulk of this functional requirement will be graded
-    based on 87 JUnit test cases, each worth 1 point. This is the same as
-    someone using the classes you wrote based purely on the interface
-    definitions. If you implement the interface correctly, then you should
+    based on unit tests. This is the same as someone using 
+    the classes you wrote based purely on the interface definitions. 
+    If you implement the interface correctly, then you should
     pass the associated test cases. 
+    **Examples of small unit tests can be found in the included `test` directory**, 
+    with some very basic instructions provided in [`test/README.md`](test/README.md).
     
   * **You are NOT permitted to share test code for this project.** However, if you have
     access to test code for the `StringList` project, then you are free to personally
