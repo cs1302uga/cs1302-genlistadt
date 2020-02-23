@@ -169,9 +169,9 @@ from the diagram for brevity):
     
     ```java
      * <p>
-     * This is based on test code originally authored by FALL_2019_STUDENT_NAME, 
+     * This is based on test code originally authored by SPRING_2020_STUDENT_NAME, 
      * which was provided by the official Piazza post
-     * <a href="https://piazza.com/class/jz31ce2e6ph6e1?cid=652">here</a>.
+     * <a href="https://piazza.com/class/k4x23al2zg1266?cid=474">here</a>.
      ```
      
 #### `BaseGenList<T>` (optional)
