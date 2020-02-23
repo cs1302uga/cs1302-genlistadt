@@ -153,8 +153,10 @@ from the diagram for brevity):
     the classes you wrote based purely on the interface definitions. 
     If you implement the interface correctly, then you should
     pass the associated test cases. 
+    <!--
     **Examples of small unit tests can be found in the included `test` directory**, 
     with some very basic instructions provided in [`test/README.md`](test/README.md).
+    //-->
     
   * **You are NOT permitted to share test code for this project.** However, if you have
     access to test code for the `StringList` project, then you are free to personally
