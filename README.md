@@ -123,7 +123,7 @@ require the presence of a method related to a particular functionality.
 The actual functionality is tested using test cases.
 
 <center>
-<img alt="Sample UML Diagram" src="img/genlistadt-uml.png"/>
+<img style="align: center;" alt="Sample UML Diagram" src="img/genlistadt-uml.png"/>
 </center>
 
 #### `LinkedGenList<T>`
