@@ -77,7 +77,7 @@ to do so.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface [here](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
+for the interface [here](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
 as well as a `.jar` file containing the compiled version of the interface..
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
@@ -100,7 +100,7 @@ help avoid redundancy and promote code reuse.
 
 ### Suggested Reading
 
-* [API Documentation for `GenList<T>`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
+* [API Documentation for `GenList<T>`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
 
 ### Learning Outcomes
 
@@ -206,11 +206,11 @@ from the diagram for brevity):
   
   | Points | Static Method | List Method | Example of Non-Trivial |
   |--------|---------------|-------------|------------------------|
-  | **3** | `demoMap` | [`<R> GenList<R> map(Function<T,R> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#map-java.util.function.Function-) | Transform an element's value and change its type. |
-  | **3** | `demoReduce` | [`T reduce(T start, BinaryOperator<T> f)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#reduce-T-java.util.function.BinaryOperator-) | Concatenation, addition, squaring, multiplying, etc. is okay. |
-  | **3** | `demoFilter` | [`GenList<T> filter(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#filter-java.util.function.Predicate-) | Make use of a compound boolean expression.
-  | **2** | `demoMin` | [`T min(Comparator<T> c)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#min-java.util.Comparator-) | Use an ordering based on parts/digits of the elements instead of the entire elements. |
-  | **2** | `demoAllMatch` | [`boolean allMatch(Predicate<T> p)`](http://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#allMatch-java.util.function.Predicate-) | Make use of a compound boolean expression. |
+  | **3** | `demoMap` | [`<R> GenList<R> map(Function<T,R> f)`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#map-java.util.function.Function-) | Transform an element's value and change its type. |
+  | **3** | `demoReduce` | [`T reduce(T start, BinaryOperator<T> f)`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#reduce-T-java.util.function.BinaryOperator-) | Concatenation, addition, squaring, multiplying, etc. is okay. |
+  | **3** | `demoFilter` | [`GenList<T> filter(Predicate<T> p)`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#filter-java.util.function.Predicate-) | Make use of a compound boolean expression.
+  | **2** | `demoMin` | [`T min(Comparator<T> c)`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#min-java.util.Comparator-) | Use an ordering based on parts/digits of the elements instead of the entire elements. |
+  | **2** | `demoAllMatch` | [`boolean allMatch(Predicate<T> p)`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#allMatch-java.util.function.Predicate-) | Make use of a compound boolean expression. |
   
   * **What is meaningful?** You need to make the code, documentation, and the printout clear such 
     that anyone who is reading it can understand what is going on. The scenarios
@@ -273,6 +273,7 @@ made to modify your submission to evaluate other requirements.
   ```
   $ javac -d bin src/cs1302/genlist/YourNodeClassName.java
   $ javac -cp lib/genlistadt.jar -d bin src/cs1302/genlist/YourIteratorClassName.java
+  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/BaseGenList.java
   $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
   $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
   ```
@@ -423,98 +424,6 @@ Below are some frequently asked questions related to this project.
    
    In the last example, when `T` gets replaced when the class is used, it's replaced everywhere, including
    in the the `implements` clause.
-   
-1. **Can I technically implement the methods first before I implement them correctly?**
-
-   You may wish to write out the method signatures for the methods you are
-   implementing from the interface with empty bodies in an attempt to get started.
-   You will quickly discover that the methods that have a non-void return
-   value actually need to return something. If you don't put a return statement,
-   then this complicates trying to compile and test one method at a time.
-   
-   It is possible to _temporarily_ include a `throw` statement in the method
-   until you commit to writing the return statement. I reccommend throwing
-   an instance of [`UnsupportedOperationException`](https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html)
-   if you choose to do this. For example, you might write something like this for the `get(int)`
-   method:
-   ```
-   public T get(int index) {
-       throw new UnsupportedOperationException("not yet implemented");
-   } // get
-   ```
-   
-1. **What is `genlistadt.jar`?**
-
-   In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single 
-   compressed file. Typically a JAR file contains the package directories and `.class` files
-   for a library. This is just like the `bin` directory that you are used to, except it's all
-   bundled into a single file. For example, the `genlistadt.jar` file contains the package directories
-   and `.class` files for `cs1302.genlistadt.GenList`. If you are in the same directory as
-   `glistadt.jar`, then you can use the following command to take peek into the archive:
-   
-   ```
-   $ jar -tf lib/genlistadt.jar
-   ```
-   
-   You shold notice that the top-level directory in the JAR file is `cs1302`, which means that
-   the JAR file itself can serve as the default package for compiled code--this is why we
-   use with `-cp` in examples given elsewhere in this project description.
-
-1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
-
-   It doesn't work because the `javadoc` tool requires the source code in order to automatically
-   pull the text of comments from supertypes when applicable. We did not provide you with the
-   source code for the interface, so this is working as intended. You can use the `-link` option
-   to have website links to the interface documentation and the `-classpath` option to add the
-   `listadt.jar` file to the classpath (similar to `-cp` with `javac`). For example 
-   (see the note below if you have problems with this command):
-   
-   ```
-   $ javadoc USUAL_OPTIONS_HERE \
-     -classpath lib/genlistadt.jar \
-     -link https://docs.oracle.com/javase/8/docs/api \
-     -link http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc
-   ```
-   
-   **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
-   space before the `\` at the end of the first two lines. When typing this out, you should type a
-   single space followed by `\`, then immediately press your `RET` key to continue to the next line.
-   If typed correctly, you will see a `>` on the next line and you can continue typing the command.
-   The `\` and `>` characters will NOT be part of the command when you do your final press of the 
-   `RET` key. 
-   
-   Since, in your scenario, the text will not be automatically inherited, we recommend the following
-   compromise. **Do NOT manually copy the entire comment and parameter details from the API website.**
-   Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
-   code that your intent is to inherit the documentation. Something like the following will suffice:
-
-   ```java
-   /**
-    * Summary sentence.
-    *
-    * <p> 
-    * {@inheritDoc}
-    */
-   ```
-   
-   Your generated Javadoc website will contain a nice summary (can be the same as the summary sentence 
-   from the `GenList` API documentation) and, if generated correctly, a link to the `GenList` 
-   API documentation website. You might also add implementation-specific details:
-
-   ```java
-   /**
-    * Summary sentence.
-    *
-    * <p>
-    * {@inheritDoc}
-    *
-    * <p>
-    * A sentence or two concerning how this method behaves in a
-    * particular way due to the underlying implementation.  
-    */
-   ```
-   
-   **NOTE:** The `<p>` tags in the Javadoc comments above just start new paragraphs in the website output.
    
 Have a question? Please post it on the course Piazza.
 
