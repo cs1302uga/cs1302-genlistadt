@@ -132,8 +132,9 @@ from the diagram for brevity):
 #### `LinkedGenList<T>`
 
 * **`LinkedGenList<T>`:** Create the `cs1302.genlist.LinkedGenList<T>` 
-  class such that it properly implements the `cs1302.genlistadt.GenList<T>` interface 
-  with additional requirements listed below. 
+  class such that it either directly implements the `cs1302.genlistadt.GenList<T>` interface 
+  or indirectly by extending an optional abstract parent class (see below).
+  Additional requirements are listed below. 
 
   * The FQN for this generic class is `cs1302.genlist.LinkedGenList`. 
   
@@ -141,6 +142,8 @@ from the diagram for brevity):
     the interface API documentation.
     
   * The `iterator` method is requried for this project.
+    You may implement it in this class `LinkedGenList<T>` class or 
+    in the optional parent class.
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
@@ -168,6 +171,33 @@ from the diagram for brevity):
      * which was provided by the official Piazza post
      * <a href="https://piazza.com/class/jz31ce2e6ph6e1?cid=652">here</a>.
      ```
+     
+#### `BaseGenList<T>` (optional)
+
+* **`BaseGenList<T>`:** You may optionally create an abstract parent class called
+  `cs1302.genlist.BaseGenList<T>` class such that it properly implements the 
+  `cs1302.genlistadt.GenList<T>` interface. If you choose to create and use this
+  class, then the expectation is that it will be extended by your `LinkedGenList<T>`
+  class. 
+  
+  * The FQN for this generic abstract class is `cs1302.genlist.BaseGenList`. 
+  
+  * You must explicitly define and document all constructors required by
+    the interface API documentation.
+    
+  * The `iterator` method is requried for this project. You may implement it in
+    this class `BaseGenList<T>` class or in derived child classes.
+	
+  * There is a requirement related to this class's storage included
+    in the [Absolute Requirements](#absolute-requirements) section.
+  
+  * Students who created an abstract parent class for the `StringList` project
+    may find this class useful. 
+    
+  * Any requirements that would otherwise solely apply to `LinkedGenList<T>` if this
+    `BaseGenList<T>` class were not created cannot be bypassed through the creation
+    of this class. Any attempt to do so will be seen as a violation of 
+
 
 #### `LinkedGenListTest`
 
@@ -291,6 +321,11 @@ made to modify your submission to evaluate other requirements.
   of list or list-like interfaces. You may not use arrays in the
   `LinkedGenList<T>` class anywhere except in the `toArray` method --
   this also prohibits the use of `toArray` elsewhere in the class.
+  
+* **`cs1302.genlist.BaseGenList<T>` Storage Requirement:**
+  You may not use arrays in the `BaseGenList<T>` class anywhere 
+  except in the `toArray` method -- this also prohibits the use 
+  of `toArray` elsewhere in the class.
   
 * **No Stream API:**
   You are not allowed to use built-in Java streams to implement any
