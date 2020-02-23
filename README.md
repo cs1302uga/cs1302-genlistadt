@@ -271,15 +271,18 @@ made to modify your submission to evaluate other requirements.
   directory `cs1302-genlistadt`:
   
   ```
-  $ javac -d bin src/cs1302/genlist/YourNodeClassName.java
-  $ javac -cp lib/genlistadt.jar -d bin src/cs1302/genlist/YourIteratorClassName.java
-  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/BaseGenList.java
-  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
-  $ javac -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
+  $ javac -Xlint -d bin src/cs1302/genlist/YourNodeClassName.java
+  $ javac -Xlint -cp lib/genlistadt.jar -d bin src/cs1302/genlist/YourIteratorClassName.java
+  $ javac -Xlint -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/BaseGenList.java
+  $ javac -Xlint -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenList.java
+  $ javac -Xlint -cp bin:lib/genlistadt.jar -d bin src/cs1302/genlist/LinkedGenListTest.java
   ```
   
-  If your iterator class relies on types other than the interface, then you may need 
-  to also include `bin` in the class path when compiling that class.
+  The `-Xlint` option is used to display more information about warnings; the 
+  [Development Environment](#dev-env) absolute requirement states that your code should
+  compile with no errors or warnings. If your iterator class relies on types other 
+  than the interface, then you may need to also include `bin` in the class path 
+  when compiling that class.
   
   Remember, when you compile `.java` files individually, there might be 
   dependencies between the files. In such cases, the order in which you
@@ -290,7 +293,7 @@ made to modify your submission to evaluate other requirements.
   ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
   in the package tutorial.
 
-* __Development Environment:__ This project must be implemented 
+* __Development Environment:__ <a id="dev-env"/>This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
   version of Java 8 that is setup according to the instructions provided
   by your instructor. For this requirement, the term *compile* should be interpreted as 
