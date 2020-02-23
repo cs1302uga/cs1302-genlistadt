@@ -122,7 +122,9 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
-![Sample UML Diagram](img/genlistadt-uml.png)
+<center>
+<img alt="Sample UML Diagram" src="img/genlistadt-uml.png"/>
+</center>
 
 #### `LinkedGenList<T>`
 
