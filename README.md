@@ -23,6 +23,7 @@ penalty does not start applying until after the final date listed.
 
 ## Table of Contents
 
+* [Course-Specific Learning Outcomes](#course-specific-learning-outcomes)
 * [Academic Honesty](#academic-honesty)
 * [Updates](#updates)
 * [Project Description](#project-description)
@@ -34,6 +35,23 @@ penalty does not start applying until after the final date listed.
 * [Submission Instructions](#submission-instructions)
 * [Appendix - FAQ](#appendix---faq)
 
+## Course-Specific Learning Outcomes
+
+* **LO1.c:** Create and modify text files and source code using a powerful terminal-based text editor such as Emacs or Vi.
+* **LO1.d:** Use shell commands to compile new and existing software solutions that are organized into multi-level 
+  packages and have external dependencies.
+* **LO2.a:** (Optional) Identify redundancy in a set of classes and interfaces, then refactor using inheritance and polymorphism 
+  to emphasize code reuse.
+* **LO2.b:** Define, throw, and propagate exceptions appropriately in a software solution.
+* **LO2.d:** Implement new generic methods, interfaces, and classes in a software solution.
+* **LO2.e:** Utilize existing generic methods, interfaces, and classes in a software solution.
+* **LO3.a:** Create and update source code that adheres to established style guidelines.
+* **LO3.b:** Create class, interface, method, and inline documentation that satisfies a set of requirements.
+* **LO4.a:** (Partial) Design, create and use interfaces in a software solution.
+* **LO4.b:** Utilize interface-based polymorphism in a software solution.
+* **LO7.c:** (Partial) Use common abstract data types and structures, including lists, queues, arrays, and stacks in solving 
+  typical problems.
+  
 ## Academic Honesty
 
 You agree to the Academic Honesty policy as outlined in the course syllabus. 
@@ -50,14 +68,6 @@ to the copyright notice and licensing information at the bottom of this document
 If there has been an update and you have already cloned the project to Nike, 
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
-
-<!--
-* **SAT 2019-10-05:** An interactive tester has been provided to you via 
-  [Piazza @902](https://piazza.com/class/jz31ce2e6ph6e1?cid=902). 
-  This tester contains an interactive driver class that you can use to partially 
-  test your `LinkedGenList<T>` class. This tester is not what will be used during 
-  grading, however, you may find it useful when initially testing your methods.
-//-->
 
 ## Project Description
 
@@ -101,13 +111,6 @@ help avoid redundancy and promote code reuse.
 ### Suggested Reading
 
 * [API Documentation for `GenList<T>`](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/index.html)
-
-### Learning Outcomes
-
-* Implement classes according to an interface (1302-LO1).
-* Utilitze polymorphism in a software project (1302-LO3-LO4).
-* Use common data structures including lists (1302-L05).
-* Test your implementation using unit tests (1302-LO9).
 
 ## Project Requirements & Grading
 
