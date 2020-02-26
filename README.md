@@ -1,7 +1,6 @@
 # CSCI 1302 - GenList ADT v2020.sp
 
-<!-- ![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue) //-->
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 ![Trains are like linked lists...](https://i.imgur.com/MdPMTcO.png)
 
@@ -13,8 +12,7 @@ at the University of Georgia.
 
 There are different deadline options for this project. Students who perform their
 final submission via the `submit` command before the date/times listed below
-automatically receive the associated Submission-Based (SB) extra credit. There may be
-other extra credit opportunities present in the project description. The late 
+automatically receive the associated Submission-Based (SB) extra credit. The late 
 penalty does not start applying until after the final date listed. 
 
 * **FRI 2020-03-20 (Mar 20) @ 11:55 PM EST (`+20` SB Extra Credit)**
