@@ -113,7 +113,7 @@ help avoid redundancy and promote code reuse.
 ## Project Requirements & Grading
 
 This assignment is worth 100 points. The lowest possible grade is 0, and the 
-highest possible grade is 110 based on the date of your last submission
+highest possible grade is 120 based on the date of your last submission
 (see [Deadline Options](#deadline-options)).
 
 ### Functional Requirements
