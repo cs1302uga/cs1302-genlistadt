@@ -426,7 +426,7 @@ Below are some frequently asked questions related to this project.
    In the last example, when `T` gets replaced when the class is used, it's replaced everywhere, including
    in the the `implements` clause.
    
-1. **What do I need to write for my Javadoc comments?**
+1. **What do I need to write for my Javadoc comments?** <a id="faq-javadoc-what"/>
 
    Obviously, all methods that you create should be documented with Javadoc comments that
    satisfy the Code Style Guidelines for this project. For helper methods that you create,
@@ -441,7 +441,7 @@ Below are some frequently asked questions related to this project.
    If you think that users of your method need more information than what is provided in the
    parent documentation, then you should add more.
    
-1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
+1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** <a id="faq-javadoc-inheritdoc"/>
 
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
    pull the text of comments from supertypes when applicable. We did not provide you with the
