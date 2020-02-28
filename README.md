@@ -426,6 +426,21 @@ Below are some frequently asked questions related to this project.
    In the last example, when `T` gets replaced when the class is used, it's replaced everywhere, including
    in the the `implements` clause.
    
+1. **What do I need to write for my Javadoc comments?**
+
+   Obviously, all methods that you create should be documented with Javadoc comments that
+   satisfy the Code Style Guidelines for this project. For helper methods that you create,
+   this means writing documentation that would be helpful for someone who is using the method, but
+   who does not necessarily have access to its internals.
+
+   For methods that are being overridden from a parent class or interface, 
+   **you NOT manually copy the entire comment and parameter details from the API website.**
+   Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
+   code that your intent is to inherit the documentation. An example of this can be found in the
+   style guide, [here](https://github.com/cs1302uga/cs1302-styleguide#missingjavadocmethod).
+   If you think that users of your method need more information than what is provided in the
+   parent documentation, then you should add more.
+   
 1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
 
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
