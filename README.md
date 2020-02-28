@@ -434,7 +434,7 @@ Below are some frequently asked questions related to this project.
    who does not necessarily have access to its internals.
 
    For methods that are being overridden from a parent class or interface, 
-   **you NOT manually copy the entire comment and parameter details from the API website.**
+   **you should NOT manually copy the entire comment and parameter details from the API website.**
    Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
    code that your intent is to inherit the documentation. An example of this can be found in the
    style guide, [here](https://github.com/cs1302uga/cs1302-styleguide#missingjavadocmethod).
