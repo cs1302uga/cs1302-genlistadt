@@ -426,6 +426,32 @@ Below are some frequently asked questions related to this project.
    In the last example, when `T` gets replaced when the class is used, it's replaced everywhere, including
    in the the `implements` clause.
    
+1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
+
+   It doesn't work because the `javadoc` tool requires the source code in order to automatically
+   pull the text of comments from supertypes when applicable. We did not provide you with the
+   source code for the interface, so this is working as intended. 
+   
+   To generate your API documentation website with links to the official `GenList<T>` documentation,
+   you can use something similar to the following:
+   
+   ```
+   $ javadoc USUAL_OPTIONS_HERE \
+     -classpath lib/genlistadt.jar \
+     -link https://docs.oracle.com/javase/8/docs/api \
+     -link http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc
+   ```
+   
+   If you want to let `javadoc` actually inherit the documentaiton, then you might try something
+   similar to the following _experimental_ command instead (on Nike only):
+   
+   ```
+   $ javadoc1302 USUAL_JAVADOC_OPTIONS_HERE \
+     -classpath lib/genlistadt.jar \
+     -link https://docs.oracle.com/javase/8/docs/api \
+     --genlistadt
+   ```
+   
 Have a question? Please post it on the course Piazza.
 
 <hr/>
