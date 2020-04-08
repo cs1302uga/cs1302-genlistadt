@@ -146,7 +146,7 @@ from the diagram for brevity):
   * You must explicitly define and document all constructors required by
     the interface API documentation.
     
-  * The `iterator` method is requried for this project.
+  * The `iterator` method is required for this project.
     You may implement it in this class `LinkedGenList<T>` class or 
     in the [optional abstract parent class](#basegenlistt-optional).
 	
@@ -190,7 +190,7 @@ from the diagram for brevity):
   
   * The FQN for this generic abstract class is `cs1302.genlist.BaseGenList`. 
     
-  * The `iterator` method is requried for this project. You may implement it in
+  * The `iterator` method is required for this project. You may implement it in
     this class `BaseGenList<T>` class or in derived child classes.
 	
   * There is a requirement related to this class's storage included
@@ -220,7 +220,7 @@ from the diagram for brevity):
   * **What is meaningful?** You need to make the code, documentation, and the printout clear such 
     that anyone who is reading it can understand what is going on. The scenarios
     that you demo should not be trivial -- see examples above. In most cases, this will involve using 
-    some of your other list methods in conjunction with the ones that are requred 
+    some of your other list methods in conjunction with the ones that are required 
     above.
     
   * **Do I need a `main` method?** You should create a `main` method that calls each of the
@@ -349,7 +349,7 @@ $ git clone --depth 1 https://github.com/cs1302uga/cs1302-genlistadt.git
 
 This should create a directory called `cs1302-genlistadt` in
 your present working directory that contains a clone of the 
-project's respository. Take a look around.
+project's repository. Take a look around.
 
 If any updates to the project files are announced by your instructor, you can
 merge those changes into your copy by changing into your project's directory
