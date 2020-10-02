@@ -374,7 +374,7 @@ then the name of your project directory is likely `cs1302-listadt`.
 While in your project's parent directory, execute the following command: 
 
 ```
-$ submit cs1302-genlistadt cs1302a
+$ submit cs1302-genlistadt csci-1302
 ```
 
 If you have any problems submitting your project then please send a private
