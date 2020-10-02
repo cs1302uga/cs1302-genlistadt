@@ -225,7 +225,8 @@ from the diagram for brevity):
     above.
     
   * **Do I need a `main` method?** You should create a `main` method that calls each of the
-    demo functions. Please make sure that your program output is legible. 
+    demo functions. Please make sure that your program output is legible and easily understood
+    by someone who is not familiar with your code.
     
   * **Helper Methods?** You may find it useful to create a separate method for each parameterization 
     and have the main demo method call these helper methods. 
@@ -306,8 +307,8 @@ made to modify your submission to evaluate other requirements.
   then they are expected to fulfill all non-functional and absolute requirements, 
   even if the main parts of the project do not use them. You may assume
   graders will compile your source code in an order that satisfies
-  compilation dependencies. You should remove any `.java` files that you
-  do not need before submission. 
+  compilation dependencies. **You should remove any `.java` files that you
+  do not need before submission.** 
   
 * **`cs1302.genlist.LinkedGenList<T>` Storage Requirement:**
   You must use a sequence of generic node (or container) objects
@@ -374,14 +375,6 @@ While in your project's parent directory, execute the following command:
 
 ```
 $ submit cs1302-genlistadt cs1302a
-```
-
-It is also a good idea to email a copy to yourself. To do this, simply execute 
-the following command, replacing the email address with your email address:
-
-```
-$ tar zcvf cs1302-genlistadt.tar.gz cs1302-genlistadt
-$ mutt -s "[cs1302] cs1302-genlistadt" -a cs1302-genlistadt.tar.gz -- your@email.com < /dev/null
 ```
 
 If you have any problems submitting your project then please send a private
