@@ -1,11 +1,11 @@
 # CSCI 1302 - GenList ADT v2020.sp
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ![Trains are like linked lists...](https://i.imgur.com/MdPMTcO.png)
 
 This document contains the description for the Generic List API 
-project assigned to the students in the **Spring 2020** CSCI 1302 classes
+project assigned to the students in the **Fall 2020** CSCI 1302 classes
 at the University of Georgia.
 
 ## Deadline Options
@@ -15,13 +15,9 @@ final submission via the `submit` command before the date/times listed below
 automatically receive the associated Submission-Based (SB) extra credit. The late 
 penalty does not start applying until after the final date listed. 
 
-* ~**FRI 2020-03-20 (Mar 20) @ 11:55 PM EST (`+20` SB Extra Credit)**~
-* ~**SAT 2020-03-21 (Mar 21) @ 11:55 PM EST (`+10` SB Extra Credit)**~
-* ~**SUN 2020-03-22 (Mar 22) @ 11:55 PM EST (`+0` SB Extra Credit)**~
-
-* **FRI 2020-04-03 (Apr 03) @ 11:55 PM EST (`+20` SB Extra Credit)**
-* **SAT 2020-04-04 (Apr 04) @ 11:55 PM EST (`+10` SB Extra Credit)**
-* **SUN 2020-04-05 (Apr 05) @ 11:55 PM EST (`+0` SB Extra Credit)**
+* **MON 2020-10-19 (Oct 19) @ 11:55 PM EST (`+10` SB Extra Credit)**
+* **TUE 2020-10-20 (Oct 20) @ 11:55 PM EST (`+5` SB Extra Credit)**
+* **FRI 2020-10-23 (Oct 23) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
 ## Table of Contents
 
@@ -67,7 +63,7 @@ to the copyright notice and licensing information at the bottom of this document
 
 ## Updates
 
-If there has been an update and you have already cloned the project to Nike, 
+If there has been an update and you have already cloned the project to Odin, 
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
 
@@ -76,8 +72,8 @@ command while inside of your project directory.
 After implementing the `StringList` interface a couple different ways, your project
 manager discussed the finished product with the client. Well, it turns out that the
 client was only using strings as "an example" of what they wanted. In reality, the
-client wanted a generic list implementation. Without breaking a sweat, your project
-manager assigned this new, updated task to you.
+client wanted a generic list implementation that will work with any type. Without 
+breaking a sweat, your project manager assigned this new, updated task to you.
 
 In this project, you are tasked with implementing a generic list interface `GenList<T>`
 that also provides some additional functionality. Your implementation must use a linked 
@@ -93,12 +89,14 @@ for the interface [here](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/inde
 as well as a `.jar` file containing the compiled version of the interface..
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
-changes the behavior of the method.
+changes the behavior of the method. Additionally, a testing script will not be provided. It will
+be up to you to write the test code for this project. Feel free to use the `listadt-tester`
+from project 2 for example scenarios you might want to test.
 
 **WARNING:** Pay close attention to the API documentation for each and every method. While some 
 methods are new for this project, there are methods that existed in the previous list project that
 are now _genericized_. Some such method may also have updated API documentation. For example, the 
-`add` method that takes another list as a parameter is now required to handle self reference.
+`add` method that takes another list as a parameter is now required to handle self-reference.
 There are also methods that were optional / extra credit in the previous project that
 are now mandatory (e.g., the `iterator` method).
 
@@ -163,21 +161,24 @@ from the diagram for brevity):
     with some very basic instructions provided in [`test/README.md`](test/README.md).
     //-->
     
-  * **You are NOT permitted to share test code for this project.** However, if you have
-    access to test code for the `StringList` project, then you are free to personally
+  * **You are NOT permitted to share test code for this project.** However, if you wrote
+    your own test code for the `StringList` project, then you are free to personally
     adapt that code to test your generic implementation. Remember,
     if you decide to introduce additional `.java` files into your project,
     then they are expected to fulfill all non-functional and absolute requirements, 
-    even if the main parts of the project do not use them. Furthermore. if you adapt
+    even if the main parts of the project do not use them. 
+    
+    <!-- Furthermore. if you adapt
     test code originally authored by someone else, then please include the following
     snippet in any relevant Javadoc comments:
     
     ```java
      * <p>
-     * This is based on test code originally authored by SPRING_2020_STUDENT_NAME, 
+     * This is based on test code originally authored by FALL_2020_STUDENT_NAME, 
      * which was provided by the official Piazza post
      * <a href="https://piazza.com/class/k4x23al2zg1266?cid=474">here</a>.
      ```
+     -->
      
 #### `BaseGenList<T>` (optional)
 
@@ -296,8 +297,8 @@ made to modify your submission to evaluate other requirements.
   in the package tutorial.
 
 * __Development Environment:__ <a id="dev-env"/>This project must be implemented 
-  in Java 8, and it *must compile and run* correctly on Nike using the specific
-  version of Java 8 that is setup according to the instructions provided
+  in Java 11, and it *must compile and run* correctly on Odin using the specific
+  version of Java 11 that is setup according to the instructions provided
   by your instructor. For this requirement, the term *compile* should be interpreted as 
   *compile with no errors or warnings*.
   
@@ -340,7 +341,7 @@ of `LinkedGenListTest` to ensure proper use of lambda expressions.
 
 ## How to Download the Project
 
-On Nike, execute the following terminal command in order to download the project
+On Odin, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
 
 ```
@@ -353,7 +354,7 @@ project's respository. Take a look around.
 
 If any updates to the project files are announced by your instructor, you can
 merge those changes into your copy by changing into your project's directory
-on Nike and issuing the following terminal command:
+on Odin and issuing the following terminal command:
 
 ```
 $ git pull
@@ -364,7 +365,7 @@ your instructor.
 
 ## Submission Instructions
 
-You will be submitting your project via Nike before the deadline indicated
+You will be submitting your project via Odin before the deadline indicated
 near the top of this document. Make sure your project files
 are on `nike.cs.uga.edu`. Change into the parent directory of your
 project directory. If you've followed the instructions provided in this document, 
@@ -462,7 +463,7 @@ Below are some frequently asked questions related to this project.
    ```
    
    If you want to let `javadoc` actually inherit the documentaiton, then you might try something
-   similar to the following _experimental_ command instead (on Nike only):
+   similar to the following _experimental_ command instead (on Odin only):
    
    ```
    $ javadoc1302 USUAL_JAVADOC_OPTIONS_HERE \
