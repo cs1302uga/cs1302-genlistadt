@@ -15,8 +15,8 @@ final submission via the `submit` command before the date/times listed below
 automatically receive the associated Submission-Based (SB) extra credit. The late 
 penalty does not start applying until after the final date listed. 
 
-* **MON 2020-10-19 (Oct 19) @ 11:55 PM EST (`+10` SB Extra Credit)**
-* **TUE 2020-10-20 (Oct 20) @ 11:55 PM EST (`+5` SB Extra Credit)**
+* **MON 2020-10-19 (Oct 19) @ 11:55 PM EST (`+20` SB Extra Credit)**
+* **TUE 2020-10-20 (Oct 20) @ 11:55 PM EST (`+10` SB Extra Credit)**
 * **FRI 2020-10-23 (Oct 23) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
 ## Table of Contents
