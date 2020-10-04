@@ -439,31 +439,38 @@ Below are some frequently asked questions related to this project.
    If you think that users of your method need more information than what is provided in the
    parent documentation, then you should add more.
    
-1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** <a id="faq-javadoc-inheritdoc"/>
+1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
 
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
-   pull the text of comments from supertypes when applicable. We did not provide you with the
-   source code for the interface, so this is working as intended. 
+   pull the text of comments from supertypes when applicable. **We did not provide you with the
+   source code for the interface,** so this is working as intended. **However,** you can use the
+   `javadoc1302` command (only available on Odin) along with the `--GenList.java` option
+   instead of the usual `javadoc` command to give the Javadoc tool access to the source code 
+   it needs to inherit the documentation.
    
-   To generate your API documentation website with links to the official `GenList<T>` documentation,
-   you can use something similar to the following:
+   An example of the `javadoc1302` command is provided below; see the note below the example if you 
+   have problems running the command. The `USUAL_JAVADOC_OPTIONS_HERE` part might be replaced with 
+   options like `-d doc`, `-sourcepath src`, `-subpackages cs1302`, etc., as usual. Here is the
+   example:
    
    ```
-   $ javadoc USUAL_OPTIONS_HERE \
+   $ javadoc1302 --GenList.java \
+     USUAL_JAVADOC_OPTIONS_HERE \
      -classpath lib/genlistadt.jar \
-     -link https://docs.oracle.com/javase/8/docs/api \
-     -link http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc
+     -link https://docs.oracle.com/en/java/javase/11/docs/api/
    ```
    
-   If you want to let `javadoc` actually inherit the documentaiton, then you might try something
-   similar to the following _experimental_ command instead (on Odin only):
+   **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
+   space before the `\` at the end of the first two lines. When typing this out, you should type a
+   single space followed by `\`, then immediately press your `RET` key to continue to the next line.
+   If typed correctly, you will see a `>` on the next line and you can continue typing the command.
+   The `\` and `>` characters will NOT be part of the command when you do your final press of the 
+   `RET` key. 
    
-   ```
-   $ javadoc1302 USUAL_JAVADOC_OPTIONS_HERE \
-     -classpath lib/genlistadt.jar \
-     -link https://docs.oracle.com/javase/8/docs/api \
-     --genlistadt
-   ```
+   **SUGGESTION:** **Do NOT manually copy the entire comment and parameter details from the API website.**
+   Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
+   code that your intent is to inherit the documentation. An example of this can be found in the
+   style guide, [here](https://github.com/cs1302uga/cs1302-styleguide#missingjavadocmethod).
    
 Have a question? Please post it on the course Piazza.
 
