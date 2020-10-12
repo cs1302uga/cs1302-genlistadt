@@ -15,9 +15,9 @@ final submission via the `submit` command before the date/times listed below
 automatically receive the associated Submission-Based (SB) extra credit. The late 
 penalty does not start applying until after the final date listed. 
 
-* **MON 2020-10-19 (Oct 19) @ 11:55 PM EST (`+20` SB Extra Credit)**
-* **TUE 2020-10-20 (Oct 20) @ 11:55 PM EST (`+10` SB Extra Credit)**
-* **FRI 2020-10-23 (Oct 23) @ 11:55 PM EST (`+0` SB Extra Credit)**
+* **SAT 2020-10-24 (Oct 24) @ 11:55 PM EST (`+20` SB Extra Credit)**
+* **SUN 2020-10-25 (Oct 25) @ 11:55 PM EST (`+10` SB Extra Credit)**
+* **WED 2020-10-28 (Oct 28) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
 ## Table of Contents
 
@@ -62,6 +62,9 @@ section below in order to do your development on nike. Furthermore, you must adh
 to the copyright notice and licensing information at the bottom of this document.
 
 ## Updates
+
+* **2020-10-12-MON:** Added a project extension. The new due dates are now listed
+  under [Deadline Options](#deadline-options) near the beginning of this document.
 
 If there has been an update and you have already cloned the project to Odin, 
 then you can update your copy of the project using the <code>$ git pull</code>
