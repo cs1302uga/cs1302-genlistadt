@@ -63,7 +63,7 @@ to the copyright notice and licensing information at the bottom of this document
 
 ## Updates
 
-* **2020-10-12-MON:** Added a project extension. The new due dates are now listed
+* **2020-10-12-MON:** Added a project extension; the new due dates are listed
   under [Deadline Options](#deadline-options) near the beginning of this document.
 
 If there has been an update and you have already cloned the project to Odin, 
