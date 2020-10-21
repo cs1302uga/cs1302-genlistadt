@@ -15,9 +15,9 @@ final submission via the `submit` command before the date/times listed below
 automatically receive the associated Submission-Based (SB) extra credit. The late 
 penalty does not start applying until after the final date listed. 
 
-* **SAT 2020-10-24 (Oct 24) @ 11:55 PM EST (`+20` SB Extra Credit)**
-* **SUN 2020-10-25 (Oct 25) @ 11:55 PM EST (`+10` SB Extra Credit)**
-* **WED 2020-10-28 (Oct 28) @ 11:55 PM EST (`+0` SB Extra Credit)**
+* **SUN 2020-10-25 (Oct 25) @ 11:55 PM EST (`+20` SB Extra Credit)**
+* **WED 2020-10-28 (Oct 28) @ 11:55 PM EST (`+10` SB Extra Credit)**
+* **THU 2020-10-29 (Oct 29) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
 ## Table of Contents
 
@@ -65,6 +65,9 @@ to the copyright notice and licensing information at the bottom of this document
 
 * **2020-10-12-MON:** Added a project extension; the new due dates are listed
   under [Deadline Options](#deadline-options) near the beginning of this document.
+* **2020-10-21-WED:** Added another project extension due to scheduled maintenance; 
+  the new due dates are listed under [Deadline Options](#deadline-options) near the 
+  beginning of this document.
 
 If there has been an update and you have already cloned the project to Odin, 
 then you can update your copy of the project using the <code>$ git pull</code>
