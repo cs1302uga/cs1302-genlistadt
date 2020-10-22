@@ -58,7 +58,7 @@ fork this repository on GitHub if you have an account. Doing so will more than
 likely make your copy of the project publicly visible. Please follow the 
 instructions contained in the 
 [How to Download the Project](#how-to-download-the-project)
-section below in order to do your development on nike. Furthermore, you must adhere
+section below in order to do your development on Odin. Furthermore, you must adhere
 to the copyright notice and licensing information at the bottom of this document.
 
 ## Updates
@@ -374,7 +374,7 @@ your instructor.
 
 You will be submitting your project via Odin before the deadline indicated
 near the top of this document. Make sure your project files
-are on `nike.cs.uga.edu`. Change into the parent directory of your
+are on `odin.cs.uga.edu`. Change into the parent directory of your
 project directory. If you've followed the instructions provided in this document, 
 then the name of your project directory is likely `cs1302-listadt`. 
 While in your project's parent directory, execute the following command: 
