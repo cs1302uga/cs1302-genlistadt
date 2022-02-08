@@ -463,7 +463,7 @@ Below are some frequently asked questions related to this project.
    $ javadoc1302 --GenList.java \
      USUAL_JAVADOC_OPTIONS_HERE \
      -classpath lib/genlistadt.jar \
-     -link https://docs.oracle.com/en/java/javase/11/docs/api/
+     -link https://docs.oracle.com/en/java/javase/17/docs/api/
    ```
    
    **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
